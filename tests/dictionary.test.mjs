@@ -34,6 +34,8 @@ test('composed live UI sentences, room labels and journal messages are English',
   ];
   for(const source of messages)assert.equal(t.hasChinese(t.translate(source)),false,source+' => '+t.translate(source));
   assert.match(t.translate('普通狂狮'),/Normal.*Berserk Lion/);
+  assert.equal(t.translate('优先参考 · 换 2 号囚犯'),'Recommended · Replace Inmate No. 2');
+  assert.equal(t.translate('备选 · 换 10 号囚犯'),'Alternative · Replace Inmate No. 10');
 });
 test('verified terms have paired sources; editorial terms are explicitly marked',()=>{
   for(const term of glossary){assert.ok(term.source);assert.ok(term.en);assert.ok(term.zh);assert.ok(['tlidb-verified','editorial-unverified'].includes(term.status));if(term.status==='tlidb-verified'){assert.ok(term.chineseSource.startsWith('https://tlidb.com/cn/'));assert.ok(term.source.startsWith('https://tlidb.com/en/'));}}

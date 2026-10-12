@@ -14,7 +14,7 @@ const runtime=(await readFile('src/runtime.mjs','utf8')).replaceAll('export ',''
 const metadata=`// ==UserScript==
 // @name         Torchlight Talos — English
 // @namespace    https://github.com/oopsmelodic/torchlight-talos-en
-// @version      0.1.0
+// @version      0.1.1
 // @description  English interface, dynamic messages and tooltips for the original Talos simulator. EN/CN toggle; no translation service.
 // @author       oopsmelodic (localization); original simulator: 爱玩游戏的吉吉罗
 // @match        https://torchlightskill.com/talos/*

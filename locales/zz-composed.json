@@ -83,5 +83,19 @@
     "sources": [
       "reference engine after reveal or scratch"
     ]
+  },
+  {
+    "zh": "优先参考 · {0}",
+    "en": "Recommended · {0}",
+    "sources": [
+      "app.js advice-title composition; user screenshot regression"
+    ]
+  },
+  {
+    "zh": "备选 · {0}",
+    "en": "Alternative · {0}",
+    "sources": [
+      "app.js advice-title composition; user screenshot regression"
+    ]
   }
 ]

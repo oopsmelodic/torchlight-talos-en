@@ -2,6 +2,10 @@
 
 English localization for the **original** [Tartarus simulator](https://torchlightskill.com/talos/). This repository ships a browser userscript and dictionaries, not a copy of the simulator. GitHub Pages is not used.
 
+[Russian strategy guide and advisor analysis](docs/strategy-guide.ru.md): why the original advisor can recommend rerolling an Ultimate Inmate, practical decisions, and a reproducible comparison of five policies. The userscript translates the advisor; it does not replace its decision logic.
+
+Version 0.1.1 fixes nested action labels in the advisor (for example, “Recommended · Replace Inmate No. 2”). Existing installations can update through their userscript manager.
+
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) for your browser.

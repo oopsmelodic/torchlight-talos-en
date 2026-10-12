@@ -8,6 +8,8 @@ Version **0.2.0** adds a separate **Talos Advisor** with English/Russian explana
 
 ## Install
 
+**0.2.1 update:** Consumes now receive the same follow-up pairing bonus as replacements, weighted by the possible resulting rarity and Code. The advisor explains the next-pair chance and preserves deterministic ordering for tied scores. On the reported Day 6 board it recommends Cell 5 consuming Cell 13, with a 75% follow-up pair chance, instead of rerolling the existing pair.
+
 1. Install [Tampermonkey](https://www.tampermonkey.net/) for your browser.
 2. Open [talos-english.user.js](https://raw.githubusercontent.com/oopsmelodic/torchlight-talos-en/main/dist/talos-english.user.js) and choose **Install** in the userscript manager. If the browser displays plain text, create a new script in Tampermonkey, replace its contents with that file, and save.
 3. Open or reload [the original simulator](https://torchlightskill.com/talos/). English is the default. The **EN → 中文** button at the bottom switches to the original Chinese; **中文 → EN** switches back. Close an open game dialog before using this button.

@@ -16,6 +16,25 @@ function fixture(inmates=[]){
 const ranked=p=>advise(projectAdvisorState(p));
 const find=(result,type,room)=>result.candidates.find(r=>r.action.type===type&&(room===undefined||r.action.room===room));
 
+test('Day 6 regression: grow the Magic pair, then seek a Rare chain; tied replacements use cell order',()=>{
+  const p=fixture([[2,'elephant',3],[4,'elephant',1],[6,'elephant',2],[10,'elephant',2],[12,'lion',1]]);
+  p.current.tools=[];p.current.day=6;const before=JSON.stringify(p),r=ranked(p);
+  assert.deepEqual(r.candidates[0].action,{type:'eat',room:4,prey:12});
+  assert.equal(r.candidates[0].score,2.25);
+  assert.deepEqual(r.candidates[0].reasons.find(m=>m.key==='followup').args,{pairs:.75,rooms:[7,11]});
+  assert.deepEqual(r.candidates.filter(c=>c.action.type==='reroll').slice(0,2).map(c=>c.action.room),[4,12]);
+  assert.equal(JSON.stringify(p),before);
+});
+test('follow-up excludes the consumed target and Chromatic; respects Code weights and Saw outcomes',()=>{
+  const p=fixture([[0,'elephant',1],[1,'lion',1],[2,'elephant',2]]);p.current.tools=[];
+  const chance=()=>find(ranked(p),'eat',0).reasons.find(m=>m.key==='followup').args.pairs;
+  p.current.config.codeWeights=[1,0,0,0];assert.equal(chance(),0);
+  p.current.config.codeWeights=[0,0,0,1];assert.equal(chance(),1);
+  p.current.tools=['saw'];assert.equal(chance(),.75);
+  p.current.rooms[2].prisoner=null;p.current.rooms[2].status='closed';assert.equal(chance(),0);
+  p.current.rooms[0].prisoner.tier=4;p.current.rooms[1].prisoner.tier=4;assert.equal(chance(),0);
+});
+
 test('screenshot regression: protects Ultimate lion and prefers Magic replacement',()=>{
   const p=fixture([[1,'lion',4],[6,'elephant',2],[9,'elephant',1]]),before=JSON.stringify(p),r=ranked(p);
   assert.deepEqual(r.candidates[0].action,{type:'reroll',room:9});

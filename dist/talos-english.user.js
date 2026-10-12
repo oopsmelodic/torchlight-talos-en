@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Torchlight Talos — English
 // @namespace    https://github.com/oopsmelodic/torchlight-talos-en
-// @version      0.2.0
+// @version      0.2.1
 // @description  English interface, dynamic messages and tooltips for the original Talos simulator. EN/CN toggle and independent EN/RU advisor; no translation service.
 // @author       oopsmelodic (localization); original simulator: 爱玩游戏的吉吉罗
 // @match        https://torchlightskill.com/talos/*
@@ -198,7 +198,7 @@ function installTranslation(win, translator) {
     visit(doc.documentElement);
   }
   const api={
-    version:'0.2.0',
+    version:'0.2.1',
     get language(){return language;},
     setLanguage(value){language=value==='zh-CN'?'zh-CN':'en';missing.clear();try{win.localStorage.setItem(storeKey,language);}catch{}sync();},
     translate:translator.translate,
@@ -329,6 +329,23 @@ function eatCandidate(v,a,b){
   const lost=bondCost(v,[a.id,b.id]);if(lost){score-=lost;risks.push(msg('breakPrey'));}
   if(has(v,'saw'))reasons.push(msg('saw'));
   reasons.push(msg('growth',{distribution:[...distribution].map(([tier,chance])=>({tier,chance}))}));
+  // Match the replacement pairing bonus, integrating the post-Consume rarity
+  // and Code distributions. Remove the victim before looking for either
+  // direction of a follow-up; never consult hidden inmates or sampled RNG.
+  let followup=0;const partners=new Set(),codes=norm(v.config.codeWeights);
+  for(const [tier,chance]of distribution){
+    if(tier===5)continue; // Confined Chromatic inmates cannot Consume again.
+    for(let i=0;i<advisorSpecies.length;i++){
+      if(!codes[i])continue;
+      const grown={...a,prisoner:{code:advisorSpecies[i],tier}};
+      const targets=v.rooms.filter(r=>r.id!==a.id&&r.id!==b.id&&
+        (advisorCanEat(v,grown,r)||advisorCanEat(v,r,grown)));
+      if(targets.length){followup+=chance*codes[i];for(const r of targets)partners.add(r.id+1);}
+    }
+  }
+  score+=followup*3;
+  reasons.push(msg('followup',{pairs:followup,rooms:[...partners].sort((a,b)=>a-b)}));
+  if(v.rerolls<v.config.rerollsPerDay)reasons.push(msg('keepReroll'));
   risks.push(msg('randomCode'));
   return {action:{type:'eat',room:a.id,prey:b.id},score,reasons,risks};
 }
@@ -437,7 +454,9 @@ function advise(v){
     for(const r of population(v).filter(r=>r.prisoner.tier>=3))warnings.push(msg('protectHigh',name(r)));
     if(v.prey.length)warnings.push(msg('preyWait'));
   }
-  candidates.sort((a,b)=>b.score-a.score);
+  // Quantized utility gives a transitive, deterministic ordering. Equal scores
+  // retain the legal-action order (Consume before replacement, then cell ID).
+  candidates.sort((a,b)=>Math.round(b.score*1e9)-Math.round(a.score*1e9));
   return {status:candidates.length?'ready':'invalid',candidates,warnings};
 }
 
@@ -469,6 +488,8 @@ const advisorText={
   saw:['Rusty Saw: 25% chance of one extra tier, capped at Chromatic.','Rusty Saw: 25% на дополнительную ступень, максимум Chromatic.'],
   growth:['Resulting rarity: {forecast}.','Итоговая редкость: {forecast}.'],
   randomCode:['The Code changes randomly. Recheck pairings after resolution.','Вид изменится случайно. После действия заново проверьте пары.'],
+  followup:['Chance of another legal Consume involving the resulting Inmate: {pairs}; possible partner cells: {rooms}. Uses rarity/Code weights and the remaining visible board; excludes random item spawns and reward effects.','Шанс следующего допустимого поглощения с участием полученного заключённого: {pairs}; возможные партнёры: {rooms}. Учтены веса редкости/вида и оставшееся видимое поле; случайное появление пищи от предметов и эффекты наград не включены.'],
+  keepReroll:['This Consume preserves the replacement still available today.','Это поглощение сохраняет доступную сегодня замену.'],
   replaceOdds:['Cell {room}, {rarity} {species}: downgrade risk {down}; immediate pairing chance {pairs} before any Tusk upgrades.','Камера {room}, {rarity} {species}: риск понижения {down}; шанс немедленной пары {pairs} до возможных повышений Tusk.'],
   rope:['Hangman’s Rope excludes Normal and Magic from the replacement pool.','Hangman’s Rope исключает Normal и Magic при замене.'],
   fire:['Burning Stake: eligible below-Legendary replacements have a 40% adjustment to Legendary; eligibility is checked {timing}.','Burning Stake: для подходящей редкости ниже Legendary действует 40% на Legendary; условие проверяется {timing}.'],

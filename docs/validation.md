@@ -40,6 +40,13 @@ Tested the actual generated userscript in an isolated loopback preview, loading 
 - RU/EN panel controls, 2560×1440 desktop and 390×844 mobile layout, animation waiting state, and a clean sampled console were checked in the loopback preview. User saves on the original site were not touched. Extension installation remains untested here.
 - A combined original Scratch/milestone status message still contains mixed Chinese/English; the new advisor's explanation is fully localized. This existing translation gap does not affect the recommendation and is not claimed as fixed by this release.
 
+### Advisor 0.2.1 — follow-up pairing regression
+
+- 23 tests pass, including the reported five-Inmate board, consumed-target removal, Chromatic confinement, custom Code weights, Saw branches, and stable ordering of effectively equal replacement scores.
+- Repeated the original-engine acceptance on the same 200 seeded games: 20,413 legal applied actions, all games completed, zero Legendary/Ultimate replacements. All generated explanations render in EN/RU.
+- Sample mean Chromatic by scene (40 games each), 0.2.0 → 0.2.1: Normal 3.575 → 3.75; Tusk 6.3 → 5.875; Prey 4.275 → 4.275; Scratch 3.975 → 4.675; Nest 4.1 → 3.8. Outcomes are mixed: this fixes a ranking asymmetry, not a demonstrated universal improvement. These small samples do not establish statistical superiority.
+- The 0.2.0 browser layout checks remain applicable to the unchanged panel layout; 0.2.1 adds localized explanation text. No new extension installation check was performed.
+
 ### General limits
 
 - This environment did **not** install the script through Tampermonkey or another extension on the original origin. The tested integration is the same generated script loaded directly in the preview. Userscript-manager permission and browser-specific execution issues remain an installation acceptance gap.

@@ -26,6 +26,8 @@ const advisorText={
   saw:['Rusty Saw: 25% chance of one extra tier, capped at Chromatic.','Rusty Saw: 25% на дополнительную ступень, максимум Chromatic.'],
   growth:['Resulting rarity: {forecast}.','Итоговая редкость: {forecast}.'],
   randomCode:['The Code changes randomly. Recheck pairings after resolution.','Вид изменится случайно. После действия заново проверьте пары.'],
+  followup:['Chance of another legal Consume involving the resulting Inmate: {pairs}; possible partner cells: {rooms}. Uses rarity/Code weights and the remaining visible board; excludes random item spawns and reward effects.','Шанс следующего допустимого поглощения с участием полученного заключённого: {pairs}; возможные партнёры: {rooms}. Учтены веса редкости/вида и оставшееся видимое поле; случайное появление пищи от предметов и эффекты наград не включены.'],
+  keepReroll:['This Consume preserves the replacement still available today.','Это поглощение сохраняет доступную сегодня замену.'],
   replaceOdds:['Cell {room}, {rarity} {species}: downgrade risk {down}; immediate pairing chance {pairs} before any Tusk upgrades.','Камера {room}, {rarity} {species}: риск понижения {down}; шанс немедленной пары {pairs} до возможных повышений Tusk.'],
   rope:['Hangman’s Rope excludes Normal and Magic from the replacement pool.','Hangman’s Rope исключает Normal и Magic при замене.'],
   fire:['Burning Stake: eligible below-Legendary replacements have a 40% adjustment to Legendary; eligibility is checked {timing}.','Burning Stake: для подходящей редкости ниже Legendary действует 40% на Legendary; условие проверяется {timing}.'],

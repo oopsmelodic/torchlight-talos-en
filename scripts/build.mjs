@@ -15,9 +15,9 @@ const advisor=(await Promise.all(['advisor.mjs','advisor-text.mjs','advisor-ui.m
 const metadata=`// ==UserScript==
 // @name         Torchlight Talos — English
 // @namespace    https://github.com/oopsmelodic/torchlight-talos-en
-// @version      0.2.1
+// @version      0.2.2
 // @description  English interface, dynamic messages and tooltips for the original Talos simulator. EN/CN toggle and independent EN/RU advisor; no translation service.
-// @author       oopsmelodic (localization); original simulator: 爱玩游戏的吉吉罗
+// @author       oOpsiq (English translation and advisor); original simulator: 爱玩游戏的吉吉罗
 // @match        https://torchlightskill.com/talos/*
 // @match        https://torchlightskill.com/talos
 // @run-at       document-start

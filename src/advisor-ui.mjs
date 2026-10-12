@@ -48,6 +48,7 @@ export function installAdvisor(win){
     toggle.textContent=t('open');toggle.setAttribute('aria-label',t('title'));
     close.textContent='×';close.setAttribute('aria-label',t('close'));languageButton.textContent=language==='en'?'Русский':'English';
     panel.querySelector('h2').textContent=t('title');content.replaceChildren();
+    content.append(node('p',t('credits'),'ta-muted'));
     content.append(node('p',t('intro'),'ta-muted'));
     if(status)content.append(node('p',t(status),'ta-status'));
     else if(result){

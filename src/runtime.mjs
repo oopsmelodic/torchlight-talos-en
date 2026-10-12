@@ -105,7 +105,7 @@ export function installTranslation(win, translator) {
     visit(doc.documentElement);
   }
   const api={
-    version:'0.2.1',
+    version:'0.2.2',
     get language(){return language;},
     setLanguage(value){language=value==='zh-CN'?'zh-CN':'en';missing.clear();try{win.localStorage.setItem(storeKey,language);}catch{}sync();},
     translate:translator.translate,
@@ -136,6 +136,7 @@ export function installTranslation(win, translator) {
     `;
     doc.head.append(style);
     control=doc.createElement('button');control.id='talos-english-toggle';control.type='button';control.dataset.talosEnglishControl='true';
+    control.title='English translation by oOpsiq';
     control.addEventListener('click',()=>api.setLanguage(language==='en'?'zh-CN':'en'));
     doc.body.append(control);sync();
     observer.observe(doc.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attributes});

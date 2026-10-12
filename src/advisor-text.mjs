@@ -1,6 +1,7 @@
 const advisorNames={elephant:'Mammoth',lion:'Berserk Lion',wolf:'Alpha Wolf',rat:'Colossal Rat',revenge:'Avenger’s Box',muzzle:'Gag of Agony',saw:'Rusty Saw',keys:'Lost Key Ring',rope:'Hangman’s Rope',fire:'Burning Stake',nest:'Writhing Iron Box',rathead:'Rat Head Necklace',ring:'Three-Headed Thumb Ring',horn:'Horn of Strife',wine:'Crimson Vintage',brand:'Brand of Original Sin'};
 const advisorRarities=['Normal','Magic','Rare','Legendary','Ultimate','Chromatic'];
 const advisorText={
+  credits:['English translation and advisor by oOpsiq','Английский перевод и помощник — by oOpsiq'],
   title:['Talos Advisor','Помощник Talos'], open:['Advisor','Помощник'],close:['Close advisor','Закрыть помощника'],
   intro:['Visible-state heuristic · no automatic moves. Aim: more Chromatic, not currency profit.','Эвристика по открытым данным · без автоматических ходов. Цель: больше Chromatic, а не доход в валюте.'],
   limits:['Probabilities use this save’s practice settings. Estimates are not an optimal strategy or official game odds. Original advice remains available.','Вероятности взяты из тренировочных настроек сохранения. Оценка не доказывает оптимальность и не отражает официальные шансы. Авторские советы остаются доступны.'],

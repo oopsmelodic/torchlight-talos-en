@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Torchlight Talos — English
 // @namespace    https://github.com/oopsmelodic/torchlight-talos-en
-// @version      0.2.1
+// @version      0.2.2
 // @description  English interface, dynamic messages and tooltips for the original Talos simulator. EN/CN toggle and independent EN/RU advisor; no translation service.
-// @author       oopsmelodic (localization); original simulator: 爱玩游戏的吉吉罗
+// @author       oOpsiq (English translation and advisor); original simulator: 爱玩游戏的吉吉罗
 // @match        https://torchlightskill.com/talos/*
 // @match        https://torchlightskill.com/talos
 // @run-at       document-start
@@ -198,7 +198,7 @@ function installTranslation(win, translator) {
     visit(doc.documentElement);
   }
   const api={
-    version:'0.2.1',
+    version:'0.2.2',
     get language(){return language;},
     setLanguage(value){language=value==='zh-CN'?'zh-CN':'en';missing.clear();try{win.localStorage.setItem(storeKey,language);}catch{}sync();},
     translate:translator.translate,
@@ -229,6 +229,7 @@ function installTranslation(win, translator) {
     `;
     doc.head.append(style);
     control=doc.createElement('button');control.id='talos-english-toggle';control.type='button';control.dataset.talosEnglishControl='true';
+    control.title='English translation by oOpsiq';
     control.addEventListener('click',()=>api.setLanguage(language==='en'?'zh-CN':'en'));
     doc.body.append(control);sync();
     observer.observe(doc.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attributes});
@@ -463,6 +464,7 @@ function advise(v){
 const advisorNames={elephant:'Mammoth',lion:'Berserk Lion',wolf:'Alpha Wolf',rat:'Colossal Rat',revenge:'Avenger’s Box',muzzle:'Gag of Agony',saw:'Rusty Saw',keys:'Lost Key Ring',rope:'Hangman’s Rope',fire:'Burning Stake',nest:'Writhing Iron Box',rathead:'Rat Head Necklace',ring:'Three-Headed Thumb Ring',horn:'Horn of Strife',wine:'Crimson Vintage',brand:'Brand of Original Sin'};
 const advisorRarities=['Normal','Magic','Rare','Legendary','Ultimate','Chromatic'];
 const advisorText={
+  credits:['English translation and advisor by oOpsiq','Английский перевод и помощник — by oOpsiq'],
   title:['Talos Advisor','Помощник Talos'], open:['Advisor','Помощник'],close:['Close advisor','Закрыть помощника'],
   intro:['Visible-state heuristic · no automatic moves. Aim: more Chromatic, not currency profit.','Эвристика по открытым данным · без автоматических ходов. Цель: больше Chromatic, а не доход в валюте.'],
   limits:['Probabilities use this save’s practice settings. Estimates are not an optimal strategy or official game odds. Original advice remains available.','Вероятности взяты из тренировочных настроек сохранения. Оценка не доказывает оптимальность и не отражает официальные шансы. Авторские советы остаются доступны.'],
@@ -592,6 +594,7 @@ function installAdvisor(win){
     toggle.textContent=t('open');toggle.setAttribute('aria-label',t('title'));
     close.textContent='×';close.setAttribute('aria-label',t('close'));languageButton.textContent=language==='en'?'Русский':'English';
     panel.querySelector('h2').textContent=t('title');content.replaceChildren();
+    content.append(node('p',t('credits'),'ta-muted'));
     content.append(node('p',t('intro'),'ta-muted'));
     if(status)content.append(node('p',t(status),'ta-status'));
     else if(result){

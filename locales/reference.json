@@ -1,0 +1,2970 @@
+[
+  {
+    "zh": "暂无目标",
+    "en": "No objective",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "{0} 日持续养成",
+    "en": "{0} days of continuous development",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "经营期间持续培养更多绮彩囚犯，经营结束后完成暴乱演算。",
+    "en": "Continue developing more Chromatic Inmates throughout the Management Phase, then complete the Riot simulation when management ends.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "已结束",
+    "en": "Ended",
+    "sources": [
+      "goal-guide.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "待完成暴乱",
+    "en": "Riot pending",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "进行中",
+    "en": "In progress",
+    "sources": [
+      "goal-guide.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "剩余 {0} 日（含今日）",
+    "en": "{0} days remaining (including today)",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "剩余 0 日（经营已结束）",
+    "en": "0 days remaining (management has ended)",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "暂无囚犯",
+    "en": "No Inmates",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "培养第 {0} 名绮彩",
+    "en": "Develop Chromatic Inmate #{0}",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前至臻 {0} 名 · 累计绮彩 {1} 名 · {2}",
+    "en": "Ultimate: {0} · Total Chromatic: {1} · {2}",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "已完成",
+    "en": "Completed",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "至少 1 名囚犯达到{0}或更高稀有度。",
+    "en": "At least 1 Inmate must reach {0} rarity or higher.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前实验配置未设定目标。",
+    "en": "The current practice settings do not define an objective.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "暂无阶段刑具奖励。",
+    "en": "No Torture Instrument reward for this stage.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "阶段目标已达成，刑具奖励待领取。",
+    "en": "Stage objective complete. Torture Instrument reward awaiting collection.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "阶段目标已完成，不会再次发放本阶段刑具奖励。",
+    "en": "This stage objective is complete and will not award another Torture Instrument.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "完成阶段目标后，可选择 1 件刑具奖励。",
+    "en": "Complete the stage objective to choose 1 Torture Instrument reward.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "全部刑具已取得，不再生成刑具选择。",
+    "en": "All Torture Instruments have been obtained, so no further Instrument choices will be generated.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "本轮目标已完成，后续囚犯变化不会撤销。",
+    "en": "This run's objective is complete. Later changes to Inmates will not revoke it.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有囚犯。",
+    "en": "There are currently no Inmates.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前最高：{0}{1}。",
+    "en": "Current highest: {0}{1}.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "，距{0}还差 {1} 阶",
+    "en": ", {1} tiers short of {0}",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "吞噬后代号随机变化，下一步须重新检查同阶食物。",
+    "en": "A Consume action changes the Code at random. Recheck same-tier food before the next step.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "路径按当前模拟条件计算；未开启牢房和随机结果不作预判。",
+    "en": "This route uses the current simulation conditions; it does not predict unopened cells or random outcomes.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "剧痛口枷：按吃{0}人数判定，不超过 3 名时额外升 2 阶；{1}。",
+    "en": "Gag of Agony: checks the number of Inmates {0} Consume; grants 2 extra rarity tiers when no more than 3 are present; {1}.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "后",
+    "en": "after",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "前",
+    "en": "before",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "绮彩计入人数",
+    "en": "Chromatic Inmates count toward the total",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "绮彩不计人数",
+    "en": "Chromatic Inmates do not count toward the total",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "鼠头串：硕鼠可吃同阶硕鼠；硕鼠作为吞噬者时，额外升 1 阶。",
+    "en": "Rat Head Necklace: a Colossal Rat can Consume another Colossal Rat of the same tier; when the consumer is a Colossal Rat, it gains 1 extra tier.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "锈锯：25% 概率额外升 1 阶，不计入保证结果。",
+    "en": "Rusty Saw: 25% chance to gain 1 extra tier; excluded from the guaranteed outcome.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "绞首绳：换后的稀有度排除普通、魔法；代号和最终稀有度仍随机。",
+    "en": "Hangman’s Rope: replacement rarity excludes Normal and Magic; the Code and final rarity remain random.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "蠕动铁盒：每日标记未开牢房，按当前参数 {0} 日后孵化{1}硕鼠。",
+    "en": "Writhing Iron Box: marks an unopened cell each day; under the current settings, it hatches a {1} Colossal Rat after {0} days.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "火刑柱：按换{0}稀有度判定，低于传奇时有 40% 概率调整为传奇；每日目的地选项减少 1 个。",
+    "en": "Burning Stake: checks rarity {0} replacement; when below Legendary, it has a 40% chance to change it to Legendary. Also reduces daily destination choices by 1.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "遗落的钥匙串：开门有 80% 概率额外打开两侧未开牢房，新囚犯结果未知。",
+    "en": "Lost Key Ring: opening a cell has an 80% chance to open the unopened cells on both sides as well; the new Inmates are unknown.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "复仇者之匣：吞噬后有 30% 概率开门补充食物；绮彩离场后不继续补食物。",
+    "en": "Avenger’s Box: after Consume, has a 30% chance to open a cell and provide food; it does not provide more food after a Chromatic Inmate leaves the board.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "先领取刑具奖励",
+    "en": "Collect the Torture Instrument reward first",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "先领取珍藏奖励",
+    "en": "Collect the Warden's Treasure reward first",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "选择 1 件刑具并确认，再继续经营。",
+    "en": "Choose and confirm 1 Torture Instrument before continuing management.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "选择 1 件典狱长的珍藏并确认，再根据新场面判断。",
+    "en": "Choose and confirm 1 Warden's Treasure, then reassess the new board.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "经营阶段已结束",
+    "en": "Management Phase ended",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "本轮经营已结束",
+    "en": "Management has ended for this run",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "完成暴乱演算并查看本轮结果。",
+    "en": "Complete the Riot simulation and view this run's results.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "查看本轮结果，或开始新一轮经营。",
+    "en": "View this run's results or begin a new Management Phase.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "先处理当前事件",
+    "en": "Resolve the current incident first",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "确认接受或略过当前事件，再检查可用的同阶吞噬组合。",
+    "en": "Accept or skip the current incident, then check for available same-tier Consume combinations.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "先选择巡监目的地",
+    "en": "Choose a Patrol destination first",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "选择下方目的地并确认，完成巡监。",
+    "en": "Choose a destination below and confirm it to complete the Patrol.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "检查新囚犯是否能组成同阶吞噬；未开牢房的代号与稀有度未知。",
+    "en": "Check whether the new Inmate forms a same-tier Consume combination. Codes and rarities in unopened cells are unknown.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有可选择的目的地，需检查本轮配置。",
+    "en": "No destinations are currently available. Check this run's settings.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "本次吞噬可培养第 {0} 名绮彩",
+    "en": "This Consume can develop Chromatic Inmate #{0}",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "本次吞噬可达成阶段目标",
+    "en": "This Consume can complete the stage objective",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前升阶路径",
+    "en": "Current rarity upgrade route",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "选择 {0} 号{1}，吃掉 {2} 号{3}。",
+    "en": "Choose #{0} {1} to Consume #{2} {3}.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "基础升 1 阶{0}{1}；本次保证达到{2}。",
+    "en": "Base gain: 1 tier{0}{1}; guaranteed to reach {2} this time.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "，口枷额外升 2 阶",
+    "en": ", plus 2 tiers from Gag of Agony",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "，鼠头串额外升 1 阶",
+    "en": ", plus 1 tier from Rat Head Necklace",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "锈锯若触发（25%），可额外升 1 阶至{0}；不计入保证结果。",
+    "en": "If Rusty Saw triggers (25%), gain 1 more tier and reach {0}; excluded from the guaranteed outcome.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "吞噬结算后达成阶段目标，选择 1 件刑具奖励。",
+    "en": "The stage objective will be completed after Consume resolves. Choose 1 Torture Instrument reward.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "吞噬结算后达成阶段目标；刑具已全部取得，无需选择奖励。",
+    "en": "The stage objective will be completed after Consume resolves. All Torture Instruments are already owned, so no reward choice is needed.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 名绮彩囚犯单独收容，随后选择 1 件典狱长的珍藏{1}。",
+    "en": "Chromatic Inmate #{0} will be housed separately, then you will choose 1 Warden's Treasure{1}.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "；同时出现刑具奖励时先选刑具",
+    "en": "; if a Torture Instrument reward appears at the same time, choose it first",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "领取奖励后重新检查场面，继续培养下一名绮彩。",
+    "en": "After collecting rewards, reassess the board and continue developing the next Chromatic Inmate.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "吞噬后重查新代号与同阶食物，继续达到阶段目标{0}。",
+    "en": "After Consume, recheck the new Code and same-tier food, then continue toward the stage objective{0}.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "{0}按新场面的真实同阶配对继续{1}；后续代号与食物需重新检查。",
+    "en": "{0}Continue using actual same-tier matches on the new board{1}; recheck later Codes and food.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "领取阶段奖励后，",
+    "en": "After collecting the stage reward, ",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有可吞噬组合",
+    "en": "No Consume combinations are currently available",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "经营已到最后一日，结束今天进入暴乱演算。",
+    "en": "This is the final management day. End today to enter the Riot simulation.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "结束今天，下一日选择目的地补充囚犯，再检查配对。",
+    "en": "End today, choose a destination the next day to add Inmates, then check the matches again.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前囚犯没有满足条件的同阶配对。",
+    "en": "The current Inmates do not form any eligible same-tier matches.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "可换一名缺少食物的囚犯；结果随机，重新检查配对。",
+    "en": "You can replace an Inmate that lacks food. The result is random, so recheck the matches.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "若仍无配对，{0}",
+    "en": "If there is still no match, {0}",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有同阶配对，今日换次数已用尽。",
+    "en": "There are no same-tier matches, and today's replacement has already been used.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有囚犯，无法吞噬或换。",
+    "en": "There are no Inmates to Consume or replace.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "当前没有可执行的经营操作。",
+    "en": "No management actions are currently available.",
+    "sources": [
+      "goal-guide.js"
+    ]
+  },
+  {
+    "zh": "绞首绳排除低阶后没有有效权重，请在新局练习参数中保留稀有或更高的权重。",
+    "en": "After Hangman’s Rope excludes the lower tiers, no valid weights remain. In the new-run practice settings, retain a weight for Rare or higher.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "至臻目标达成：从已展示刑具样本中选择一件；三选一与等权抽样为练习策略。",
+    "en": "Ultimate objective complete: choose one from the displayed Torture Instrument samples. The choice of three and equal weighting are practice rules.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "至臻目标达成：已展示刑具样本全部持有，不生成空的奖励选择。",
+    "en": "Ultimate objective complete: all displayed Torture Instrument samples are already owned, so no empty reward choice is generated.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "绮彩囚犯单独收容：从四张已展示珍藏样本中选择一张；每名各一次的队列口径为练习策略。",
+    "en": "Chromatic Inmate housed separately: choose one of the four displayed Warden's Treasure samples. One choice per Inmate and queue handling are practice rules.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "获得刑具：{0}。刑具保留，并在满足对应条件时持续生效。",
+    "en": "Torture Instrument obtained: {0}. It remains active for the run and applies whenever its conditions are met.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·火刑柱生效：本日尚未巡监的目的地减少一项，保留原选项顺序，不重新随机。",
+    "en": "Torture Instrument · Burning Stake activated: removes one of today's remaining Patrol destinations, preserving the original order; choices are not rerolled.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "使用珍藏：{0}。本次选择立即结算，不额外消耗经营日。",
+    "en": "Warden's Treasure used: {0}. The choice resolves immediately and does not consume an additional management day.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "珍藏·三首扳指生效：额外开启 {0} 间牢房，不触发刑具、事变或房间效果；基础目标与绮彩收容仍记录。",
+    "en": "Warden's Treasure · Three-Headed Thumb Ring activated: opens {0} additional cells without triggering Torture Instruments, incidents, or room effects; base objectives and Chromatic housing are still recorded.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "珍藏·斗争铜号生效：按存活囚犯身份依次吞噬 {0} 次；新产生的奖励继续排队。",
+    "en": "Warden's Treasure · Horn of Strife activated: surviving Inmates perform {0} Consume actions in identity order; any newly generated rewards remain queued.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "珍藏·赤色佳酿生效：{0} 名低于传奇的囚犯各升 1 阶；{1}。",
+    "en": "Warden's Treasure · Crimson Vintage activated: {0} Inmates below Legendary each gain 1 tier; {1}.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "按练习参数随机变号",
+    "en": "change Codes at random according to practice settings",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "保留代号",
+    "en": "keep Codes unchanged",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "珍藏·原罪烙印生效：调整 {0} 名没有同阶食物的囚犯代号；不升阶，没有同阶伙伴时不伪造目标。",
+    "en": "Warden's Treasure · Brand of Original Sin activated: changes the Codes of {0} Inmates with no same-tier food; it grants no rarity tiers and does not fabricate a target when no same-tier partner exists.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·剧痛口枷生效：人数条件满足，额外升 2 阶。",
+    "en": "Torture Instrument · Gag of Agony activated: the Inmate-count condition was met, granting 2 extra tiers.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·鼠头串生效：硕鼠吞噬额外升 1 阶。",
+    "en": "Torture Instrument · Rat Head Necklace activated: the Colossal Rat gains 1 extra tier after Consume.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·锈锯触发：额外升 1 阶（25%为练习概率）。",
+    "en": "Torture Instrument · Rusty Saw triggered: grants 1 extra tier (25% practice probability).",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·复仇者之匣判定命中，但囚犯已收容或无关闭牢房，本次不生成食物。",
+    "en": "Torture Instrument · Avenger’s Box passed its check, but the Inmate is already housed separately or no closed cells remain, so no food is generated.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·复仇者之匣触发：{0} 号补入当前代号可吃的同阶目标；不连带其他开门效果（30%为练习概率）。",
+    "en": "Torture Instrument · Avenger’s Box triggered: cell #{0} receives a same-tier target that the current Code can Consume; no other cell-opening effects are chained (30% practice probability).",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·钥匙串触发：额外开启 {0} 间相邻牢房，不继续触发其他效果（80%为练习概率）。",
+    "en": "Torture Instrument · Key Ring triggered: opens {0} additional adjacent cells without triggering further effects (80% practice probability).",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "绞首绳排除低阶后没有有效权重，请调整练习参数",
+    "en": "After Hangman’s Rope excludes lower tiers, no valid weights remain. Adjust the practice settings.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·火刑柱触发：更换后的囚犯调整为传奇（40%为练习概率）。",
+    "en": "Torture Instrument · Burning Stake triggered: the replacement Inmate is changed to Legendary (40% practice probability).",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·绞首绳生效：更换排除普通和魔法；代号仍随机。",
+    "en": "Torture Instrument · Hangman’s Rope activated: replacement excludes Normal and Magic; the Code remains random.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "刑具·蠕动铁盒生效：{0} 号标为鼠巢，第 {1} 日成熟；时间和稀有度采用练习参数。",
+    "en": "Torture Instrument · Writhing Iron Box activated: cell #{0} is marked as a Rat Nest and matures on day {1}; timing and rarity use the practice settings.",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "样本刑具、珍藏或奖励队列记录无效",
+    "en": "Invalid sample Torture Instrument, Warden's Treasure, or reward-queue record",
+    "sources": [
+      "reference-rewards.js"
+    ]
+  },
+  {
+    "zh": "猎物标记清除：一方离场、被替换或代号改变。",
+    "en": "Prey mark cleared: one participant left, was replaced, or changed Code.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0}单独收容；珍藏选择已按顺序排队。",
+    "en": "{0} housed separately; the Warden's Treasure choice has been added to the queue in order.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0}单独收容；记录一次典狱长的珍藏，完整候选池待补，不模拟抽取。",
+    "en": "{0} housed separately; one Warden's Treasure is recorded. The full candidate pool is not yet available, so no draw is simulated.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "打开 {0} 号牢房：{1}。{2}",
+    "en": "Opened cell #{0}: {1}. {2}",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "已清除探查/划痕显示。",
+    "en": "Reveal/Scratch Marks display cleared.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物标记日开始生效：双方各升 1 阶（练习按日切换计回合）。",
+    "en": "Prey mark activates at the start of the day: both Inmates gain 1 tier (the practice counts day changes as rounds).",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号刑具鼠巢成熟，自动打开并生成{1}硕鼠（练习参数）。",
+    "en": "Torture Instrument Rat Nest in cell #{0} matured, opened automatically, and produced a {1} Colossal Rat (practice settings).",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号鼠巢经过两次日切换，自动打开并生成稀有硕鼠。",
+    "en": "Rat Nest in cell #{0} opened automatically after two day changes and produced a Rare Colossal Rat.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号特殊事件随鼠巢自动开门消耗，本次额外开门不触发事变（练习处理）。",
+    "en": "The special incident in cell #{0} was consumed when the Rat Nest opened automatically; this extra opening does not trigger an incident (practice handling).",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "标记房间不存在",
+    "en": "The marked cell does not exist",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "象牙练习标记需要场上囚犯",
+    "en": "Tusk practice marking requires an Inmate on the board",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "划痕标记需要关闭牢房",
+    "en": "Scratch Marks require a closed cell",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "鼠巢练习仅标记关闭牢房",
+    "en": "Rat Nest practice can mark closed cells only",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物练习需狂狮与同阶可克制目标",
+    "en": "Prey practice requires a Berserk Lion and a same-tier target it counters",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "该囚犯已参与猎物标记",
+    "en": "This Inmate already belongs to a Prey mark",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "未知资料标记",
+    "en": "Unknown reference mark",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "练习场面添加{0}标记；标记生成来源与概率未核实。",
+    "en": "Added a {0} mark to the practice board; the mark's source and probability have not been verified.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "象牙",
+    "en": "Tusk",
+    "sources": [
+      "reference-rules.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "划痕",
+    "en": "Scratch Marks",
+    "sources": [
+      "reference-rules.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "鼠巢",
+    "en": "Rat Nest",
+    "sources": [
+      "reference-rules.js",
+      "reference-ui.js",
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "猎物",
+    "en": "Prey",
+    "sources": [
+      "reference-rules.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "资料练习版本无效",
+    "en": "Invalid Management Practice version",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "未知资料练习场面",
+    "en": "Unknown Management Practice board",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "公开资料校准练习：文字规则依据测试预览；初始场面、随机权重、日切换与操作限制属于本地练习参数。",
+    "en": "Management Practice: text rules are based on the public test preview; the initial board, random weights, day changes, and action limits are local practice settings.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "奖励练习启用：至臻目标一次刑具三选一，每名绮彩一次珍藏选择；使用8件刑具与4张珍藏已展示样本，完整卡池未知。候选等权、次数、顺序、概率及额外开门仍为练习策略。",
+    "en": "Reward practice enabled: the Ultimate objective offers one choice of three Torture Instruments, and each Chromatic Inmate offers one Warden's Treasure choice; 8 displayed Instruments and 4 displayed Warden's Treasure samples are used, while the full pools are unknown. Equal weighting, counts, order, probabilities, and extra cell openings remain practice rules.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "经营结束：沙盘与单独收容的囚犯按六种稀有度分组。手动记录镇压结果；没有虚构战力、复活次数或掉落。",
+    "en": "Management ended: Inmates on the board and housed separately are grouped into six rarity tiers. Record suppression results manually; no combat power, revival count, or drops are invented.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号特殊事件随奖励额外开门消耗，不触发事变。",
+    "en": "The special incident in cell #{0} was consumed by the reward's extra cell opening and does not trigger.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0}吃掉{1}，升 {2} 阶{3}，随后随机代号。",
+    "en": "{0} Consumed {1}, gained {2} tiers{3}, then changed Code at random.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "划痕房中同阶囚犯",
+    "en": "same-tier Inmate in a cell with Scratch Marks",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "（额外 2 阶；基础升阶叠加口径为练习参数）",
+    "en": "(2 extra tiers; whether the base gain stacks is a practice setting)",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "场面已变化或资料练习操作当前不可用",
+    "en": "The board changed, or this Management Practice action is currently unavailable",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号特殊事件随连锁额外开门消耗，本次不触发事变（练习处理）。",
+    "en": "The special incident in cell #{0} was consumed by the chain's extra cell opening and does not trigger (practice handling).",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "连锁反应生效：沿顺时针练习路径开启未开牢房；划痕与鼠巢随开门清除，不触发沿途事变。",
+    "en": "Chain Reaction activated: opens closed cells along the clockwise practice route; Scratch Marks and Rat Nests clear when cells open, and incidents along the route do not trigger.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号牢房触发特殊事件：{1}，等待决定。",
+    "en": "Cell #{0} triggered a special incident: {1}. Awaiting a decision.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "连锁反应",
+    "en": "Chain Reaction",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "处刑效率",
+    "en": "Execution Efficiency",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "探查 {0} 号牢房：仅显示{1}，不开门；实际稀有度仍可能受未复刻的刑具与事变影响。",
+    "en": "Revealed cell #{0}: shows {1} only and does not open the cell; actual rarity may still be affected by Torture Instruments and incidents not reproduced here.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0}换为{1}；生成概率使用练习权重。",
+    "en": "{0} was replaced by {1}; generation uses the practice weights.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "象牙生效：随机 {0} 名场上囚犯各升 1 阶；不足 4 人全选，候选池仅含已开牢房（练习策略）。",
+    "en": "Tusk activated: {0} random Inmates on the board each gain 1 tier; if fewer than 4 are available, all are selected. The candidate pool contains opened cells only (practice rule).",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "略过特殊事件，保留开门后的囚犯与标记。",
+    "en": "Skipped the special incident; the Inmate and marks revealed when the cell opened remain.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "连锁反应已准备：仅下一次巡监移动沿路径开门；采用顺时针练习路线，不触发其他效果。",
+    "en": "Chain Reaction prepared: only the next Patrol movement opens cells along its path; it uses a clockwise practice route and triggers no other effects.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "处刑效率：移除 {0} 名被{1}克制且稀有度严格更低的场上囚犯，每名升 1 阶。",
+    "en": "Execution Efficiency: removes {0} Inmates on the board that are countered by {1} and strictly lower in rarity; gains 1 tier for each removed.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "处刑后的随机变号已按开启的练习参数执行。",
+    "en": "Random Code changes after the execution were applied according to the enabled practice setting.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 日开始。",
+    "en": "Day {0} begins.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录一次复活；资料未给本轮次数上限，不自动扣虚构次数。",
+    "en": "Recorded one revival; the reference does not provide a per-run limit, so no invented count is deducted automatically.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录复活次数耗尽；仅能开启此前已点亮的秘藏。",
+    "en": "Recorded that revivals are exhausted; only previously illuminated Caches can be opened.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录{0}囚犯组已击败，对应秘藏点亮；尚未开启。",
+    "en": "Recorded the {0} Inmate group as defeated; its Cache is illuminated but not yet opened.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "开启{0}典狱秘藏；记录开箱状态，不模拟未公布的物品概率或兑现收益。",
+    "en": "Opened the {0} Warden's Cache; records its opened state without simulating unpublished item probabilities or realized returns.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "先完成刑具或珍藏选择，再校准标记",
+    "en": "Finish choosing a Torture Instrument or Warden's Treasure before calibrating marks",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "仅经营中可手动校准标记",
+    "en": "Marks can be calibrated manually only during management",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "标记参数无效",
+    "en": "Invalid mark parameters",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "先完成刑具或珍藏选择，再校准场面",
+    "en": "Finish choosing a Torture Instrument or Warden's Treasure before calibrating the board",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "仅经营中可校准场面",
+    "en": "The board can be calibrated only during management",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "牢房不存在",
+    "en": "The cell does not exist",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "囚犯参数无效",
+    "en": "Invalid Inmate parameter",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "手动校准 {0} 号牢房，清除该房标记与旧目标引用。",
+    "en": "Manually calibrated cell #{0}, clearing its marks and references from previous targets.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "特殊事件",
+    "en": "Special Incident",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "打开该牢门后出现特殊事件，届时可确认或略过；当前不预告事件种类。",
+    "en": "A special incident will appear when this cell is opened. You may accept or skip it then; the incident type is not revealed in advance.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "换后随机最多 4 名场上囚犯各升 1 阶",
+    "en": "After replacement, up to 4 random Inmates on the board each gain 1 tier",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} · 同阶头狼可吞噬，额外升 2 阶",
+    "en": "{0} · A same-tier Alpha Wolf can Consume it and gain 2 extra tiers",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "已探查",
+    "en": "Revealed",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} · 代号未知",
+    "en": "{0} · Code unknown",
+    "sources": [
+      "reference-rules.js",
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 日自动开房 · {1}硕鼠（{2}次日切换）",
+    "en": "Opens automatically on day {0} · {1} Colossal Rat ({2} day changes)",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 日自动开房 · 稀有硕鼠",
+    "en": "Opens automatically on day {0} · Rare Colossal Rat",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "与 {0} 号联动 · 剩 {1} 次日开始升阶",
+    "en": "Linked to cell #{0} · {1} day starts until the rarity increase",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "公开资料校准练习",
+    "en": "Management Practice",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "下一次巡监移动沿路径打开未开牢房，不触发其他开门效果。",
+    "en": "The next Patrol movement opens closed cells along its path without triggering other cell-opening effects.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "移除当前囚犯克制且稀有度严格更低的场上囚犯，每名升 1 阶。",
+    "en": "Removes Inmates on the board that the current Inmate counters and that are strictly lower in rarity; gains 1 tier per removal.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料来自测试预览；正式上线规则和完整卡池尚未核验。",
+    "en": "The reference comes from the test preview; launch rules and the full card pools have not been verified.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "开门/换人随机权重、每日换人次数、目的地选项与耗天按本地练习参数；不代表官方限制或收益。",
+    "en": "Random weights for opening/replacement, daily replacement count, destination choices, and day costs use local practice settings; they do not represent official limits or returns.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "象牙候选为已开牢房{0}；不足四人全选。官方候选池与不足人数策略待核。",
+    "en": "Tusk candidates are opened cells{0}; if fewer than four are available, all are selected. The official candidate pool and undersized-pool handling await verification.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "，包含换后囚犯",
+    "en": ", including the replacement Inmate",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物从下一日开始触发三次；双方同一快照升阶后清除失效引用。正式触发与过期顺序待核。",
+    "en": "Prey triggers three times beginning the next day; both Inmates gain tiers from the same snapshot, after which invalid references are cleared. Official trigger and expiration order await verification.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物专项练习仅允许狂狮与同阶可克制目标施加标记；这项起始资格属于本地练习限制，公开文本尚未给全。",
+    "en": "Prey-focused practice permits marking only between a Berserk Lion and a same-tier target it counters. This initial eligibility rule is local to the practice; the public text is incomplete.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "划痕按{0}练习，封顶绮彩；跨代号资格与叠加口径待核。",
+    "en": "Scratch Marks use {0} in this practice and cap at Chromatic; cross-Code eligibility and stacking await verification.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "基础 1 阶 + 额外 2 阶",
+    "en": "base gain of 1 tier + 2 extra tiers",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "仅额外 2 阶",
+    "en": "2 extra tiers only",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "鼠巢按两次日切换成熟，提前开门清除；不按任意两次操作成熟。",
+    "en": "Rat Nest matures after two day changes and clears if opened early; arbitrary actions do not count toward maturation.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "探查只显示稀有度；练习每日次数可配置。欺压未给基数及完整触发，不模拟概率。",
+    "en": "Reveal shows rarity only; the daily practice limit is configurable. Oppress has no published base rate or complete trigger, so its probability is not simulated.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "绮彩收容、进入终局、击败点亮与开启秘藏分别记录；不模拟战力、复活上限、真实掉落或利润。",
+    "en": "Chromatic housing, entering the endgame, illuminating a Cache by defeating a group, and opening that Cache are recorded separately; combat power, revival limits, actual drops, and profit are not simulated.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "特殊事件{0}；发生率、两种事件等权、可略过与不额外耗日均为本地练习参数，不代表完整事变池。",
+    "en": "Special incidents are {0}; their occurrence rate, equal weighting between the two incidents, ability to skip, and lack of extra day cost are local practice settings and do not represent the complete incident pool.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "启用，初始房间发生率 {0}%",
+    "en": "enabled, initial-cell rate {0}%",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "关闭",
+    "en": "Off",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "连锁仅下一次移动生效，顺时针路线为练习策略；沿途事件随额外开门消耗、划痕与鼠巢清除，不连带触发其他效果。",
+    "en": "Chain Reaction applies only to the next movement and uses a clockwise practice route; incidents along the route are consumed by extra openings, Scratch Marks and Rat Nests clear, and no other effects are chained.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "处刑使用当前代号与稀有度快照，只处理场上严格低阶克制目标；处刑后{0}为练习参数，尚无完整触发顺序。",
+    "en": "Execution uses a snapshot of current Codes and rarities and affects only strictly lower-tier targets on the board that are countered; {0} after execution is a practice setting, as the complete trigger order is unknown.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "随机变号",
+    "en": "change Codes at random",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "保持代号",
+    "en": "keep Codes unchanged",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "至臻目标只发一次刑具三选一；每名绮彩各发一次四选一珍藏。8件刑具与4张珍藏仅为已展示样本，候选等权与奖励次数口径属于练习策略。",
+    "en": "The Ultimate objective grants one choice of three Torture Instruments once; each Chromatic Inmate grants one choice of four Warden's Treasures. The 8 Instruments and 4 Warden's Treasures are displayed samples only. Equal candidate weighting and reward counts are practice rules.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "同次行动先排刑具、后排珍藏；领奖不额外耗日并保留原阶段。珍藏继续产生的奖励逐一排队，完成选择前不能继续其他行动或编辑。",
+    "en": "When one action generates both, Torture Instruments queue before Warden's Treasures; collecting rewards costs no additional day and preserves the previous phase. Rewards generated by Warden's Treasures are queued one by one, and no other actions or edits are allowed until all choices are complete.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "处刑绑定开门原囚犯身份；若原主体已收容或被吞噬，只能略过，后续补入同一牢房的囚犯不能接替。连锁为下一次移动的路径效果，原囚犯离场仍可领取；此为避免处刑主体漂移的练习处理。",
+    "en": "Execution remains bound to the identity of the Inmate originally revealed by the cell. If that Inmate is housed separately or Consumed, the incident can only be skipped; a later Inmate placed in the same cell cannot replace it. Chain Reaction is a path effect for the next movement and remains claimable if the original Inmate leaves. This practice handling prevents the execution subject from changing.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "额外开门不触发钥匙、事变或房间效果；仍处理基础目标达成与绮彩收容。工具触发概率、口枷/火刑判定时点和顺序沿用可校准练习参数。",
+    "en": "Extra cell openings do not trigger the Key Ring, incidents, or room effects; base-objective completion and Chromatic housing are still processed. Tool trigger probabilities, Gag of Agony/Burning Stake check timing, and effect order use the configurable practice settings.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料练习版本或模式无效",
+    "en": "Invalid Management Practice version or mode",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料练习参数无效",
+    "en": "Invalid Management Practice settings",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "特殊事件练习参数无效",
+    "en": "Invalid special-incident practice settings",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料练习不得伪造未知卡池或事件概率",
+    "en": "Management Practice must not invent unknown card pools or incident probabilities",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "待处理特殊事件无效",
+    "en": "Invalid pending special incident",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "待处理特殊事件与阶段不一致",
+    "en": "Pending special incident does not match the phase",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "连锁只能等待下一次巡监移动",
+    "en": "Chain Reaction can only wait for the next Patrol movement",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料练习日或随机状态无效",
+    "en": "Invalid Management Practice day or random state",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料练习牢房无效",
+    "en": "Invalid Management Practice cell",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料标记或探查状态无效",
+    "en": "Invalid reference mark or Reveal state",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "刑具鼠巢来源无效",
+    "en": "Invalid Torture Instrument Rat Nest source",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "单独收容状态无效",
+    "en": "Invalid separate-housing state",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料囚犯身份或稀有度无效",
+    "en": "Invalid reference Inmate identity or rarity",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物引用或计时无效",
+    "en": "Invalid Prey reference or timer",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "猎物标记不得重复绑定囚犯",
+    "en": "A Prey mark cannot bind the same Inmate more than once",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料经营次数无效",
+    "en": "Invalid reference-management action count",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料操作记录无效",
+    "en": "Invalid reference action record",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料珍藏记录无效",
+    "en": "Invalid reference Warden's Treasure record",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "特殊事件效果记录无效",
+    "en": "Invalid special-incident effect record",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "特殊事件记录与待处理效果不一致",
+    "en": "Special-incident record does not match the pending effect",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料终局状态无效",
+    "en": "Invalid reference endgame state",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "经营与终局状态混淆",
+    "en": "Management and endgame states are mixed",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "终局名单或六阶分组无效",
+    "en": "Invalid endgame roster or six-tier grouping",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "点亮秘藏必须对应已击败分组",
+    "en": "An illuminated Cache must correspond to a defeated group",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "资料镇压结束状态无效",
+    "en": "Invalid reference suppression completion state",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "选择{0}",
+    "en": "Select {0}",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "领取当前已展示样本奖励，不额外消耗经营日；完整卡池仍未知。",
+    "en": "Collect the currently displayed sample reward without consuming an additional management day; the full pool remains unknown.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 号吃 {1} 号",
+    "en": "No. {0} Consumes No. {1}",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "同阶头狼可吞噬划痕房；叠加口径为练习参数，不能据此预测正式收益。",
+    "en": "A same-tier Alpha Wolf can Consume an Inmate in a cell with Scratch Marks; stacking is a practice setting and cannot predict official returns.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "同阶克制关系成立，基础升 1 阶；代号随机，随后重查配对。",
+    "en": "The same-tier counter relationship applies, granting a base gain of 1 tier; the Code changes at random, so recheck matches afterward.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "前往 {0} 号牢房",
+    "en": "Go to Cell No. {0}",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "关闭房只依据已显示的稀有度/标记；不读取隐藏代号进行推荐。",
+    "en": "For a closed cell, recommendations use only the displayed rarity/mark; they do not read the hidden Code.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "换 {0} 号囚犯",
+    "en": "Replace Inmate No. {0}",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "代号与稀有度权重未知，当前采用练习参数。",
+    "en": "Code and rarity weights are unknown; the current practice settings are used.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "结束今天",
+    "en": "End Today",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "按练习日切换推进猎物与鼠巢计时。",
+    "en": "Advance Prey and Rat Nest timers when the practice day changes.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "确认特殊事件",
+    "en": "Accept the special incident",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "略过特殊事件",
+    "en": "Skip the special incident",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "仅下一次移动沿练习路径开门，不触发沿途事变。",
+    "en": "Only the next movement opens cells along the practice route; incidents along the route do not trigger.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "只移除当前囚犯克制且严格低阶的场上目标；未开房不参与。",
+    "en": "Removes only strictly lower-tier targets on the board that the current Inmate counters; unopened cells do not participate.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录本组击败",
+    "en": "Record this group as defeated",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录复活",
+    "en": "Record a revival",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "记录复活耗尽",
+    "en": "Record revivals exhausted",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "根据实际或练习结果手动记录，不自动预测战斗成败。",
+    "en": "Record the actual or practice result manually; combat success or failure is not predicted automatically.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "开启{0}秘藏",
+    "en": "Open {0} Cache",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "仅已点亮秘藏可以开启；不抽取未公开权重的物品。",
+    "en": "Only illuminated Caches can be opened; items with unpublished weights are not drawn.",
+    "sources": [
+      "reference-rules.js"
+    ]
+  },
+  {
+    "zh": "空监狱 · 从第一扇牢门开始",
+    "en": "Empty prison · Start with the first cell door",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "象牙 · 换人连带升阶",
+    "en": "Tusk · Replacement raises other Inmates' rarity",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "猎物 · 狂狮与目标共同成长",
+    "en": "Prey · Berserk Lion and target grow together",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "划痕 · 头狼吞噬关闭房",
+    "en": "Scratch Marks · Alpha Wolf Consumes a closed cell",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "鼠巢 · 两轮后稀有硕鼠",
+    "en": "Rat Nest · Rare Colossal Rat after two rounds",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "旧版空监狱",
+    "en": "Legacy empty prison",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "旧版六囚犯示例",
+    "en": "Legacy six-Inmate sample",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "旧版口枷样本",
+    "en": "Legacy Gag of Agony sample",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "旧版鼠系样本",
+    "en": "Legacy rat-focused sample",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "探查",
+    "en": "Reveal",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "特殊事件 · 开门触发",
+    "en": "Special Incident · Triggered by opening a cell",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "待处理",
+    "en": "Pending",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "待巡监",
+    "en": "Awaiting Patrol",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已使用",
+    "en": "Used",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已略过",
+    "en": "Skipped",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "下次移动开启路径上的所有未开牢房，不触发其他效果。",
+    "en": "The next movement opens all closed cells along its path without triggering other effects.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "移除当前囚犯克制且稀有度严格低于它的已开囚犯，每移除一名提升一阶。",
+    "en": "Removes opened Inmates that the current Inmate counters and that are strictly lower in rarity; gains 1 tier per removal.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "按本局练习路径处理，仅生效一次。",
+    "en": "Uses this run's practice route and applies once.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "按发动前代号与稀有度筛选；{0}。",
+    "en": "Filters using Codes and rarities before activation; {0}.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "处刑后变号开启（练习参数）",
+    "en": "Code changes after execution enabled (practice setting)",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "处刑后保持代号",
+    "en": "Keep Code after execution",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{9} 号 · {10}",
+    "en": "#{9} · {10}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{0}，{1}号，第{2}日获得，{3}。{4} {5}",
+    "en": "{0}, cell #{1}, obtained on day {2}, {3}. {4} {5}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· 第{0}日处理",
+    "en": "· Resolved on day {0}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "待领刑具",
+    "en": "Torture Instrument Available",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已领刑具",
+    "en": "Torture Instrument collected",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "培养一名至臻",
+    "en": "Develop one Ultimate Inmate",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "经营完成",
+    "en": "Management complete",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "养成中",
+    "en": "Developing",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "当前至臻 {0} · 绮彩 {1}",
+    "en": "Current Ultimate: {0} · Chromatic: {1}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "查看待镇压交接名单",
+    "en": "View the roster awaiting suppression handoff",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "先选择当前奖励，再继续经营",
+    "en": "Choose the current reward before continuing management",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "培养更多绮彩 · 当前 {0} 名",
+    "en": "Develop more Chromatic Inmates · Current: {0}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "培养一名至臻，选择一件刑具",
+    "en": "Develop one Ultimate Inmate and choose one Torture Instrument",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "阶段目标：至少一名囚犯达到至臻，可选择一件刑具。领取后继续培养更多绮彩。",
+    "en": "Stage objective: at least one Inmate must reach Ultimate. You may then choose one Torture Instrument and continue developing more Chromatic Inmates.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "刑具在本局持续生效；绮彩单独收容后选择典狱长的珍藏，选择后立即生效。",
+    "en": "Torture Instruments remain active for this run. When a Chromatic Inmate is housed separately, choose a Warden's Treasure; it takes effect immediately.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "经营结束，准备交接",
+    "en": "Management ended; preparing the handoff",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "选择奖励",
+    "en": "Choose reward",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "巡监与已知标记",
+    "en": "Patrol and known marks",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "检查同阶配对与标记",
+    "en": "Check same-tier matches and marks",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "查看沙盘剩余囚犯与单独收容囚犯。",
+    "en": "View the Inmates remaining on the board and those housed separately.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "当前界面只交接经营成果。",
+    "en": "This screen only hands off the management results.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "打开牢房后检查同阶克制组合，培养至臻可领取刑具。",
+    "en": "After opening a cell, check same-tier counter combinations. Developing an Ultimate Inmate can award a Torture Instrument.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "刑具获得后持续生效；吞噬变号后重新检查配对。",
+    "en": "Torture Instruments remain active once obtained; recheck matches after Consume changes a Code.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "培养绮彩后选择珍藏；奖励选择不额外耗日，全部领取后继续经营。",
+    "en": "After developing a Chromatic Inmate, choose a Warden's Treasure. Reward choices cost no additional day; continue management after collecting them all.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已获得刑具：{0}",
+    "en": "Torture Instruments obtained: {0}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{0}号 {1}：{2}",
+    "en": "#{0} {1}: {2}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "持续培养更多绮彩囚犯，不限定只养一名至臻。",
+    "en": "Continue developing more Chromatic Inmates; you are not limited to a single Ultimate Inmate.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "绮彩会离开沙盘单独收容，并记录一次珍藏获得；完整珍藏池未公开，不虚构抽卡。",
+    "en": "Chromatic Inmates leave the board to be housed separately, recording one Warden's Treasure acquisition. The full Warden's Treasure pool is unpublished, so no fictional draw is made.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "正式游戏随后进入镇压；本工具本轮只练习经营。",
+    "en": "The official game proceeds to suppression afterward; this tool practices management only for this run.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "打开未知牢房后，再检查同阶克制组合。",
+    "en": "After opening an unknown cell, check same-tier counter combinations again.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "利用已出现的标记；吞噬变号后重新检查配对。",
+    "en": "Use marks that have appeared; recheck matches after Consume changes a Code.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "没有合适组合时可以更换或结束今天；限制与随机权重属于练习参数。",
+    "en": "When no suitable combination exists, you can replace an Inmate or end the day; limits and random weights are practice settings.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "请先选择当前奖励",
+    "en": "Choose the current reward first",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "请先选择一名场上囚犯，再选择目标",
+    "en": "Choose an Inmate on the board, then choose a target",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "同阶头狼可吞噬划痕房",
+    "en": "A same-tier Alpha Wolf can Consume an Inmate in a cell with Scratch Marks",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "同阶克制成立",
+    "en": "Same-tier counter relationship applies",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "关闭房需要划痕标记与同阶头狼；探查只揭示稀有度",
+    "en": "A closed cell requires Scratch Marks and a same-tier Alpha Wolf; Reveal shows rarity only",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "不满足同阶克制条件",
+    "en": "Same-tier counter requirements are not met",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "猎物目标",
+    "en": "Prey target",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· {0}日",
+    "en": "· {0} days",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· {0}轮",
+    "en": "· {0} rounds",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "门后囚犯未知",
+    "en": "Inmate Behind Door Unknown",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "空牢房",
+    "en": "Empty Cell",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "本局标记",
+    "en": "Marks in this run",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{1} 号 · {2}",
+    "en": "#{1} · {2}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{0}号 {1} {2}",
+    "en": "#{0} {1} {2}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "绑定双方身份与代号；消失、替换或变号清除。施加资格与计时口径为练习策略。",
+    "en": "Binds both identities and Codes; clears if either disappears, is replaced, or changes Code. Application eligibility and timing are practice rules.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "本地候选为已开房，含换后囚犯；不足4名全选。",
+    "en": "The local candidate pool contains opened cells, including replacement Inmates; if fewer than 4 exist, all are selected.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "仅显示稀有度；开门清除。基础升阶是否叠加属于练习参数。",
+    "en": "Shows rarity only and clears when the cell opens. Whether the base rarity gain stacks is a practice setting.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "按",
+    "en": "After ",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "次日切换成熟为",
+    "en": " day changes, it matures into a ",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "硕鼠；提前开门清除。",
+    "en": " Colossal Rat; clears if opened early.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "按两次日切换成熟；提前开门清除，不按任意两次操作计数。",
+    "en": "Matures after two day changes; clears if opened early, and arbitrary actions do not count.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "仅显示稀有度，不开启牢门，不显示代号。",
+    "en": "Shows rarity only; does not open the cell door or reveal the Code.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "当前没有养成标记。在起始页可进入标记专项练习。",
+    "en": "There are currently no development marks. You can enter a mark-focused practice from the start screen.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "典狱长的珍藏",
+    "en": "Warden's Treasure",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "绮彩囚犯已单独收容，选择一项珍藏后继续经营。",
+    "en": "A Chromatic Inmate has been housed separately. Choose one Warden's Treasure to continue management.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "第 {7} 日 · {8}",
+    "en": "Day {7} · {8}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已展示奖励样本{10}",
+    "en": "Displayed reward sample{10}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{0}，第{1}日获得，{2}。{3}",
+    "en": "{0}, obtained on day {1}, {2}. {3}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "已生效",
+    "en": "Applied",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "待选择",
+    "en": "Awaiting selection",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· 第 {0} 日使用",
+    "en": "· Used on day {0}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "旧局奖励未接入",
+    "en": "Rewards are not integrated into this legacy run",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "此局保持旧规则，只记录珍藏；新建一局可体验刑具和珍藏选择。",
+    "en": "This run keeps the legacy rules and records Warden's Treasures only. Start a new run to use Torture Instrument and Warden's Treasure choices.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "刑具待选择",
+    "en": "Choose Torture Instrument",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "刑具已领取",
+    "en": "Torture Instrument collected",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "至臻目标待完成",
+    "en": "Ultimate objective incomplete",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "珍藏已生效 {0} 次{1}。绮彩收容后选择珍藏；候选为已展示样本。",
+    "en": "Warden's Treasures applied {0} times{1}. Choose a Warden's Treasure after a Chromatic Inmate is housed separately; candidates are displayed samples.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· 待选择 {0} 次",
+    "en": "· {0} choices pending",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "经营完成 · 待镇压囚犯",
+    "en": "Management complete · Inmates awaiting suppression",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "沙盘剩余 {0} 名 · 单独收容 {1} 名 · 记录珍藏 {2} 次",
+    "en": "On board: {0} · Housed separately: {1} · Warden's Treasures recorded: {2}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "此处只交接经营成果。正式游戏随后镇压囚犯并点亮秘藏；不在本界面模拟刷怪、战力、复活、真实物品掉落或搬砖收益。",
+    "en": "This screen only hands off management results. The official game then suppresses Inmates and illuminates Caches; this screen does not simulate combat farming, combat power, revivals, actual item drops, or farming profit.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{1} · {2} 名",
+    "en": "{1} · {2} Inmate(s)",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "· 已收容",
+    "en": "· Housed",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "无该稀有度囚犯",
+    "en": "No Inmates of this rarity",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "开局",
+    "en": "Start",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "资料校准练习",
+    "en": "Management Practice",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "固定练习场面不代表官方开局；未知权重与操作限制保留为练习参数。",
+    "en": "The fixed practice board is not an official starting setup; unknown weights and action limits remain practice settings.",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "事变",
+    "en": "Incident",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "开门",
+    "en": "Open Door",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "接受",
+    "en": "Accept",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "略过",
+    "en": "Skip",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "吞噬",
+    "en": "Consume",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "换人",
+    "en": "Replace",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "过日",
+    "en": "End Day",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "交接",
+    "en": "Handoff",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "标记",
+    "en": "Mark",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "校准",
+    "en": "Calibrate",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "刑具",
+    "en": "Torture Instrument",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "珍藏",
+    "en": "Warden's Treasure",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "记录",
+    "en": "Log",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "经营场面更新",
+    "en": "Management board updated",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "经营记录",
+    "en": "Management Log",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "{0} 次",
+    "en": "{0} times",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "按日滚动查看经营记录",
+    "en": "Scroll through the Management Log by day",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 日",
+    "en": "Day {0}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "第 {0} 日 · {1}",
+    "en": "Day {0} · {1}",
+    "sources": [
+      "reference-ui.js"
+    ]
+  },
+  {
+    "zh": "普通",
+    "en": "Normal",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "魔法",
+    "en": "Magic",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "稀有",
+    "en": "Rare",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "传奇",
+    "en": "Legendary",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "至臻",
+    "en": "Ultimate",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "绮彩",
+    "en": "Chromatic",
+    "sources": [
+      "reward-icons.js",
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "同阶",
+    "en": "Same Rarity",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "克制",
+    "en": "Counter",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "下位囚犯",
+    "en": "Lower-Tier Inmate",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "两侧牢房",
+    "en": "cells on both sides",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "不触发其他效果",
+    "en": "does not trigger other effects",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "不超过",
+    "en": "no more than",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "低于",
+    "en": "below",
+    "sources": [
+      "reward-icons.js"
+    ]
+  },
+  {
+    "zh": "巨象",
+    "en": "Mammoth",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "狂狮",
+    "en": "Berserk Lion",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "头狼",
+    "en": "Alpha Wolf",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "硕鼠",
+    "en": "Colossal Rat",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "复仇者之匣",
+    "en": "Avenger’s Box",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "吃后 30% 开一间牢房，必出当前囚犯可吃的对象。额外开门不触发其他效果。",
+    "en": "After Consume, has a 30% chance to open one cell, guaranteed to contain a target the current Inmate can Consume. Extra cell openings do not trigger other effects.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "狂兽的剧痛口枷",
+    "en": "Raging Beast’s Gag of Agony",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "剧痛口枷",
+    "en": "Gag of Agony",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "场上囚犯不超过 3 名时，吃后额外升 2 阶。人数判定时点可校准。",
+    "en": "When no more than 3 Inmates are on the board, gain 2 extra tiers after Consume. The timing of the Inmate-count check can be calibrated.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "锈锯",
+    "en": "Rusty Saw",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "吃后 25% 概率额外升 1 阶。",
+    "en": "After Consume, has a 25% chance to gain 1 extra tier.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "遗落的钥匙串",
+    "en": "Lost Key Ring",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "开后 80% 概率开两侧牢房。额外开门不触发其他效果。",
+    "en": "After opening a cell, has an 80% chance to open the cells on both sides. Extra cell openings do not trigger other effects.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "绞首绳",
+    "en": "Hangman’s Rope",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "换后的稀有度排除普通、魔法。",
+    "en": "Replacement rarity excludes Normal and Magic.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "火刑柱",
+    "en": "Burning Stake",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "每日目的地选项 −1；低于传奇的囚犯换后，40% 概率调整为传奇。",
+    "en": "Reduces daily destination choices by 1; after replacing an Inmate below Legendary, has a 40% chance to change it to Legendary.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "蠕动铁盒：硕鼠",
+    "en": "Writhing Iron Box: Colossal Rat",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "蠕动铁盒",
+    "en": "Writhing Iron Box",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "每日开始标记一间未开牢房为鼠巢。演示采用两轮孵化、稀有硕鼠，可校准。",
+    "en": "At the start of each day, marks one unopened cell as a Rat Nest. The demo uses a two-round hatch and a Rare Colossal Rat; settings can be calibrated.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "鼠头串：硕鼠",
+    "en": "Rat Head Necklace: Colossal Rat",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "鼠头串",
+    "en": "Rat Head Necklace",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "硕鼠可吃同阶硕鼠，吃后额外升 1 阶；随后仍可能变号。",
+    "en": "A Colossal Rat can Consume another Colossal Rat of the same tier and gains 1 extra tier afterward; its Code may still change.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "三首扳指",
+    "en": "Three-Headed Thumb Ring",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "随机开最多 3 间牢房，不触发其他效果。",
+    "en": "Opens up to 3 random cells without triggering other effects.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "斗争铜号",
+    "en": "Horn of Strife",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "有可吃目标的囚犯依次随机吃 1 名目标。",
+    "en": "Each Inmate with an eligible target randomly Consumes 1 target in turn.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "赤色佳酿",
+    "en": "Crimson Vintage",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "所有低于传奇的囚犯升 1 阶。",
+    "en": "All Inmates below Legendary gain 1 tier.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "原罪烙印",
+    "en": "Brand of Original Sin",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "调整最多 4 名无食物囚犯的代号，使其能找到同阶目标。",
+    "en": "Changes the Codes of up to 4 Inmates with no food so they can find same-tier targets.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "随机分布",
+    "en": "Random Distribution",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "开门品质权重与四种代号权重是实验参数；没有实测概率。",
+    "en": "Cell-opening rarity weights and the four Code weights are practice parameters; no measured probabilities are available.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "经营限制",
+    "en": "Management Limits",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "演示每个游戏日换一次；吃不占游戏日；被消耗的牢房可重新打开。均待正式规则核准。",
+    "en": "The demo allows one replacement per game day; Consume does not use a game day; consumed cells can be reopened. All await confirmation against the official rules.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "触发顺序",
+    "en": "Trigger Order",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "默认口枷按吃前人数，绮彩不计场上；依次处理口枷、鼠头串、锈锯、复仇者之匣。可切换判定。",
+    "en": "By default, Gag of Agony checks the pre-Consume count and excludes Chromatic Inmates from the board count; Gag of Agony, Rat Head Necklace, Rusty Saw, then Avenger’s Box resolve in order. The check can be changed.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "目标与卡池",
+    "en": "Objectives and Card Pools",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "仅复刻已确认的至臻目标，完成后选一个刑具；卡池均为已展示条目，不代表完整池。",
+    "en": "Only the confirmed Ultimate objective is reproduced. Completing it grants one Torture Instrument choice; all card pools contain displayed entries only and do not represent the complete pools.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "鼠巢与事件",
+    "en": "Rat Nests and Incidents",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "演示两轮孵化稀有硕鼠；事件出现率、环形邻接、处刑效率同阶筛选均为假设。",
+    "en": "The demo hatches a Rare Colossal Rat after two rounds; incident rate, circular adjacency, and same-tier filtering for Execution Efficiency are assumptions.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "升阶处理",
+    "en": "Rarity Upgrade Handling",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "普通吃后变号；刑具额外升阶合并结算、不额外变号；佳酿默认不变号。封顶和先后待核准。",
+    "en": "A normal Consume changes Code afterward; extra tiers from Torture Instruments resolve together without another Code change; Crimson Vintage keeps Codes unchanged by default. Caps and order await confirmation.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "暴乱与奖励",
+    "en": "Riot and Rewards",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "按稀有度分三组演算战斗，以成长积分表示结果。战力、难度与积分不代表真实掉落、价格或收益。",
+    "en": "Combat is simulated in three rarity groups and represented by development points. Power, difficulty, and points do not represent actual drops, prices, or returns.",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 参数超出范围",
+    "en": "{0} parameter is out of range",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 必须为有效权重",
+    "en": "{0} must be a valid weight",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "事件概率必须在 0 到 1 之间",
+    "en": "Incident probability must be between 0 and 1",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "演算战力必须为正数",
+    "en": "Simulated combat power must be positive",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "判定时点无效",
+    "en": "Invalid check timing",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "{0} 必须为布尔值",
+    "en": "{0} must be a Boolean",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "目标阶级无效",
+    "en": "Invalid objective tier",
+    "sources": [
+      "rules.js"
+    ]
+  },
+  {
+    "zh": "触发顺序无效",
+    "en": "Invalid trigger order",
+    "sources": [
+      "rules.js"
+    ]
+  }
+]

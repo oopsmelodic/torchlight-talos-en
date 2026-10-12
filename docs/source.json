@@ -1,0 +1,13 @@
+{
+  "site": "https://torchlightskill.com/talos/",
+  "repository": "https://github.com/xiaoyihuang0503-cyber/torchlightskill-talos",
+  "revision": "bf4397331eae2e683268c508906c9aec38f69d1a",
+  "revisionDate": "2026-10-12T11:15:13Z",
+  "version": "0.6.14",
+  "inspectedOn": "2026-10-12",
+  "upstreamProjectLicense": null,
+  "upstreamMaterialsBundled": false,
+  "delivery": "userscript on original website",
+  "pagesEnabled": false,
+  "notes": "Initial site-mirroring scope was replaced at the user's request with a local browser translation companion. No upstream game implementation or assets are redistributed. Author attribution and limitations are translated in place."
+}

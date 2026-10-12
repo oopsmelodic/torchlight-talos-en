@@ -1,0 +1,533 @@
+[
+  {
+    "zh": "吃",
+    "en": "Consume",
+    "source": "https://tlidb.com/en/Consume",
+    "chineseSource": "https://tlidb.com/cn/Consume",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "换",
+    "en": "Replace",
+    "source": "https://tlidb.com/en/Replace",
+    "chineseSource": "https://tlidb.com/cn/Replace",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "开",
+    "en": "On",
+    "source": "https://tlidb.com/en/On",
+    "chineseSource": "https://tlidb.com/cn/On",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "狱中事变",
+    "en": "Prison Incident",
+    "source": "https://tlidb.com/en/Prison_Incident",
+    "chineseSource": "https://tlidb.com/cn/Prison_Incident",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "代号",
+    "en": "Code",
+    "source": "https://tlidb.com/en/Code",
+    "chineseSource": "https://tlidb.com/cn/Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "刑具",
+    "en": "Torture Instrument",
+    "source": "https://tlidb.com/en/Torture_Instrument",
+    "chineseSource": "https://tlidb.com/cn/Torture_Instrument",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "克制",
+    "en": "Counter",
+    "source": "https://tlidb.com/en/Counter",
+    "chineseSource": "https://tlidb.com/cn/Counter",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "赏赐",
+    "en": "Bestow",
+    "source": "https://tlidb.com/en/Bestow",
+    "chineseSource": "https://tlidb.com/cn/Bestow",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "相同囚犯",
+    "en": "Matching Inmate",
+    "source": "https://tlidb.com/en/Matching_Inmate",
+    "chineseSource": "https://tlidb.com/cn/Matching_Inmate",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "上位囚犯",
+    "en": "Higher-Tier Inmate",
+    "source": "https://tlidb.com/en/Higher-Tier_Inmate",
+    "chineseSource": "https://tlidb.com/cn/Higher-Tier_Inmate",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "下位囚犯",
+    "en": "Lower-Tier Inmate",
+    "source": "https://tlidb.com/en/Lower-Tier_Inmate",
+    "chineseSource": "https://tlidb.com/cn/Lower-Tier_Inmate",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "象牙",
+    "en": "Tusk",
+    "source": "https://tlidb.com/en/Tusk",
+    "chineseSource": "https://tlidb.com/cn/Tusk",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "猎物",
+    "en": "Prey",
+    "source": "https://tlidb.com/en/Prey",
+    "chineseSource": "https://tlidb.com/cn/Prey",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "划痕",
+    "en": "Scratch Marks",
+    "source": "https://tlidb.com/en/Scratch_Marks",
+    "chineseSource": "https://tlidb.com/cn/Scratch_Marks",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "鼠巢",
+    "en": "Rat Nest",
+    "source": "https://tlidb.com/en/Rat_Nest",
+    "chineseSource": "https://tlidb.com/cn/Rat_Nest",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "欺压",
+    "en": "Oppress",
+    "source": "https://tlidb.com/en/Oppress",
+    "chineseSource": "https://tlidb.com/cn/Oppress",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "典狱长的珍藏",
+    "en": "Warden's Treasure",
+    "source": "https://tlidb.com/en/Wardens_Treasure",
+    "chineseSource": "https://tlidb.com/cn/Wardens_Treasure",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "探查",
+    "en": "Reveal",
+    "source": "https://tlidb.com/en/Reveal",
+    "chineseSource": "https://tlidb.com/cn/Reveal",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "稀缺代号",
+    "en": "Scarce Code",
+    "source": "https://tlidb.com/en/Scarce_Code",
+    "chineseSource": "https://tlidb.com/cn/Scarce_Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "稀有度最高",
+    "en": "Highest Rarity",
+    "source": "https://tlidb.com/en/Highest_Rarity",
+    "chineseSource": "https://tlidb.com/cn/Highest_Rarity",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "典狱秘藏",
+    "en": "Warden's Cache",
+    "source": "https://tlidb.com/en/Wardens_Cache",
+    "chineseSource": "https://tlidb.com/cn/Wardens_Cache",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "绞肉模式",
+    "en": "Meat Grinder Mode",
+    "source": "https://tlidb.com/en/Meat_Grinder_Mode",
+    "chineseSource": "https://tlidb.com/cn/Meat_Grinder_Mode",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired entry matched by TLIDB record URL; name verified independently of simulator rules."
+  },
+  {
+    "zh": "巨象",
+    "en": "Mammoth",
+    "source": "https://tlidb.com/en/Code",
+    "chineseSource": "https://tlidb.com/cn/Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired Code entry lists all four inmate types in the same order."
+  },
+  {
+    "zh": "狂狮",
+    "en": "Berserk Lion",
+    "source": "https://tlidb.com/en/Code",
+    "chineseSource": "https://tlidb.com/cn/Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired Code and Counter entries."
+  },
+  {
+    "zh": "头狼",
+    "en": "Alpha Wolf",
+    "source": "https://tlidb.com/en/Code",
+    "chineseSource": "https://tlidb.com/cn/Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired Code and Counter entries."
+  },
+  {
+    "zh": "硕鼠",
+    "en": "Colossal Rat",
+    "source": "https://tlidb.com/en/Code",
+    "chineseSource": "https://tlidb.com/cn/Code",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired Code and Counter entries."
+  },
+  {
+    "zh": "绮彩",
+    "en": "Chromatic",
+    "source": "https://tlidb.com/en/Wardens_Treasure",
+    "chineseSource": "https://tlidb.com/cn/Wardens_Treasure",
+    "status": "tlidb-verified",
+    "checked": "2026-10-12",
+    "note": "Paired reward description identifies the qualifying rarity."
+  },
+  {
+    "zh": "普通",
+    "en": "Normal",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "魔法",
+    "en": "Magic",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "稀有",
+    "en": "Rare",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "传奇",
+    "en": "Legendary",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "至臻",
+    "en": "Ultimate",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "塔羅斯监狱",
+    "en": "Tartarus Prison",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "塔罗斯监狱",
+    "en": "Tartarus Prison",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "复仇者之匣",
+    "en": "Avenger’s Box",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "狂兽的剧痛口枷",
+    "en": "Raging Beast’s Gag of Agony",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "剧痛口枷",
+    "en": "Gag of Agony",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "锈锯",
+    "en": "Rusty Saw",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "遗落的钥匙串",
+    "en": "Lost Key Ring",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "钥匙串",
+    "en": "Key Ring",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "绞首绳",
+    "en": "Hangman’s Rope",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "火刑柱",
+    "en": "Burning Stake",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "蠕动铁盒：硕鼠",
+    "en": "Writhing Iron Box: Colossal Rat",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "蠕动铁盒",
+    "en": "Writhing Iron Box",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "鼠头串：硕鼠",
+    "en": "Rat Head Necklace: Colossal Rat",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "鼠头串",
+    "en": "Rat Head Necklace",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "三首扳指",
+    "en": "Three-Headed Thumb Ring",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "斗争铜号",
+    "en": "Horn of Strife",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "赤色佳酿",
+    "en": "Crimson Vintage",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "原罪烙印",
+    "en": "Brand of Original Sin",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "连锁反应",
+    "en": "Chain Reaction",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "处刑效率",
+    "en": "Execution Efficiency",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "巡监",
+    "en": "Patrol",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "囚犯",
+    "en": "Inmate",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "囚徒",
+    "en": "Inmate",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "牢房",
+    "en": "Cell",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "吞噬",
+    "en": "Consume",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "珍藏",
+    "en": "Warden’s Treasure",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "调度券",
+    "en": "Dispatch Ticket",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "经营规则演习",
+    "en": "Management Practice",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "原创押运合约",
+    "en": "Original Escort Contracts",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "挑战经营",
+    "en": "Escort Challenge",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  },
+  {
+    "zh": "实验参数",
+    "en": "Experimental Parameters",
+    "source": "https://torchlightskill.com/talos/",
+    "status": "editorial-unverified",
+    "checked": "2026-10-12",
+    "note": "Editorial wording; no matching paired TLIDB record verified for this use. Not an official English name."
+  }
+]

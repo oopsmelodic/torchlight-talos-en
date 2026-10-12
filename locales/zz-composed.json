@@ -1,0 +1,87 @@
+[
+  {
+    "zh": "囚犯已单独收容，选择一项珍藏后继续经营。",
+    "en": "The Inmate is housed separately. Choose a Warden’s Treasure to continue.",
+    "sources": [
+      "rendered reward tooltip"
+    ]
+  },
+  {
+    "zh": "随机开最多",
+    "en": "Randomly open up to",
+    "sources": [
+      "rendered reward tooltip"
+    ]
+  },
+  {
+    "zh": "{0} 间",
+    "en": "{0} cells",
+    "sources": [
+      "rendered reward tooltip"
+    ]
+  },
+  {
+    "zh": "按{0}次日切换成熟为{1}硕鼠；提前开门清除。",
+    "en": "Hatches into a {1} Colossal Rat after {0} day changes; opening the cell early clears the nest.",
+    "sources": [
+      "reference-ui.js concatenated message"
+    ]
+  },
+  {
+    "zh": "{0}号：{1}。",
+    "en": "Cell {0}: {1}.",
+    "sources": [
+      "rendered journal detail"
+    ]
+  },
+  {
+    "zh": "{0} 号 {1}，可巡监",
+    "en": "Cell {0}: {1}; available for Patrol",
+    "sources": [
+      "app.js composed room label"
+    ]
+  },
+  {
+    "zh": "打开该牢门后出现特殊事件，届时可确认或略过",
+    "en": "Opening this cell reveals a Special Incident, which you may accept or skip",
+    "sources": [
+      "composed room description"
+    ]
+  },
+  {
+    "zh": "当前不预告事件种类。",
+    "en": "The incident type is not revealed in advance.",
+    "sources": [
+      "composed room description"
+    ]
+  },
+  {
+    "zh": "结束",
+    "en": "End",
+    "sources": [
+      "action label"
+    ]
+  },
+  {
+    "zh": "略过",
+    "en": "Skip",
+    "sources": [
+      "action label"
+    ]
+  },
+  {
+    "zh": "关闭",
+    "en": "Close",
+    "context": "close-control",
+    "sources": [
+      "button/accessibility close control"
+    ]
+  },
+  {
+    "zh": "打开 {0} 号牢房：{1}。已清除探查/划痕显示。",
+    "en": "Opened Cell {0}: {1}. Reveal / Scratch Marks indicators cleared.",
+    "sources": [
+      "reference engine after reveal or scratch"
+    ]
+  }
+]

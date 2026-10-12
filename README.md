@@ -4,7 +4,7 @@ English localization for the **original** [Tartarus simulator](https://torchligh
 
 [Russian strategy guide and advisor analysis](docs/strategy-guide.ru.md): why the original advisor can recommend rerolling an Ultimate Inmate, practical decisions, and a reproducible comparison of five policies. The userscript translates the advisor; it does not replace its decision logic.
 
-Version 0.1.1 fixes nested action labels in the advisor (for example, “Recommended · Replace Inmate No. 2”). Existing installations can update through their userscript manager.
+Version **0.2.0** adds a separate **Talos Advisor** with English/Russian explanations, alternatives, and risks. It considers rarity, food pairings, instruments, marks, rewards, and remaining days. [How it works and its limits](docs/advisor.md). Existing installations can update through their userscript manager. The original advisor's decision logic remains unchanged.
 
 ## Install
 
@@ -14,11 +14,13 @@ Version 0.1.1 fixes nested action labels in the advisor (for example, “Recomme
 
 If scripts do not run, follow the manager's [permission instructions](https://www.tampermonkey.net/faq.php#Q209). Disable this userscript and reload to return completely to the original site.
 
+Start or continue a Management Practice run, then click **Advisor** at the bottom left. Choose **Русский** for Russian explanations. Make and confirm moves using the game's own buttons; the advisor updates after the action. Its language is independent of the EN/CN game translation.
+
 ## Scope
 
 The bundled dictionary translates startup, settings, help, cell and Inmate labels, items, effects, events, rewards, results, journal entries, validation errors, dynamic tooltips, accessibility labels, and the CSS selection label. It observes DOM updates and translates native alert/confirm/prompt messages without changing their return values. Decorative rule highlighting is rebuilt around translated sentences to avoid broken words.
 
-The script does not replace the engine, patch random numbers, change gameplay identifiers, modify input values, or translate saved JSON. It writes only its own language preference (`talos-english-userscript-language-v1`). Existing game saves remain on the original origin. There is no translation API, telemetry, remote dependency, or background request in the userscript. The original website's network activity, analytics, assets, and behavior remain its own.
+The script does not replace the engine, patch random numbers, change gameplay identifiers, modify input values, or translate saved JSON. It writes only its own language preferences (`talos-english-userscript-language-v1` and `talos-advisor-language-v1`). The advisor reads the local autosave, projects visible information, and checks it against the rendered board before recommending a move. It does not use hidden prisoners, seed/RNG, or future incident types. It never writes the game's save or performs moves. Existing game saves remain on the original origin. There is no translation API, telemetry, remote dependency, or background request in the userscript. The original website's network activity, analytics, assets, and behavior remain its own.
 
 ## Source and attribution
 

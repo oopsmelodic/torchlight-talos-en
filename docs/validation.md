@@ -32,6 +32,16 @@ Tested the actual generated userscript in an isolated loopback preview, loading 
 
 ## Evidence limits
 
+### Advisor 0.2.0 — 2026-10-12
+
+- 21 self-contained tests pass (11 advisor tests plus 10 translation tests); build and whitespace checks pass.
+- Independent original-engine acceptance: 200 completed games, 20,355 applied actions across Normal/Tusk/Prey/Scratch/Nest. Every candidate was checked against legal actions; input state stayed unchanged by the advisor; every explanation rendered in EN/RU. No Legendary/Ultimate replacements. All eight tool labels are unit-tested; sampled games selected seven tools (Burning Stake was not selected). This is compatibility evidence, not a comparative strategy benchmark.
+- Browser: continued Day 11; recommended replacing Magic Cell 10 while keeping Ultimate Cell 2; displayed 52% downgrade and 11.25% pairing chances. Executed replacement manually, observed a new End recommendation, and used Undo to restore the original advice. Imported Scratch, observed the Ultimate 100% forecast, consumed the marked target, and opened the helper inside the reward dialog; it recommended Lost Key Ring with 15 closed cells.
+- RU/EN panel controls, 2560×1440 desktop and 390×844 mobile layout, animation waiting state, and a clean sampled console were checked in the loopback preview. User saves on the original site were not touched. Extension installation remains untested here.
+- A combined original Scratch/milestone status message still contains mixed Chinese/English; the new advisor's explanation is fully localized. This existing translation gap does not affect the recommendation and is not claimed as fixed by this release.
+
+### General limits
+
 - This environment did **not** install the script through Tampermonkey or another extension on the original origin. The tested integration is the same generated script loaded directly in the preview. Userscript-manager permission and browser-specific execution issues remain an installation acceptance gap.
 - All modes and endings were exercised in the engine harness; not every mode, ending, reward combination, or error dialog was played manually in the browser.
 - Network-resource inspection was limited to successful live operation, visible image checks, and the console. It is not an exhaustive HAR audit of every optional sound/model.

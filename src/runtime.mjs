@@ -105,7 +105,7 @@ export function installTranslation(win, translator) {
     visit(doc.documentElement);
   }
   const api={
-    version:'0.2.2',
+    version:'0.3.0',
     get language(){return language;},
     setLanguage(value){language=value==='zh-CN'?'zh-CN':'en';missing.clear();try{win.localStorage.setItem(storeKey,language);}catch{}sync();},
     translate:translator.translate,

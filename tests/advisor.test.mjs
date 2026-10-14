@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {JSDOM} from 'jsdom';
 import {projectAdvisorState,advise} from '../src/advisor.mjs';
 import {advisorMessage,advisorActionLabel} from '../src/advisor-text.mjs';
-import {installAdvisor} from '../src/advisor-ui.mjs';
+import {installAdvisor,advisorControls} from '../src/advisor-ui.mjs';
 
 function fixture(inmates=[]){
   const current={day:11,revision:0,phase:'manage',position:0,rerolls:0,goalIndex:1,chain:false,rainbow:[],tools:['saw'],destinations:[0,1,2],pending:[],
@@ -15,6 +15,17 @@ function fixture(inmates=[]){
 }
 const ranked=p=>advise(projectAdvisorState(p));
 const find=(result,type,room)=>result.candidates.find(r=>r.action.type===type&&(room===undefined||r.action.room===room));
+
+test('bottom controls restrict actors and next-Consume chance to the current eater',()=>{
+  const p=fixture([[2,'elephant',3],[4,'elephant',1],[6,'elephant',2],[10,'elephant',2],[12,'lion',1]]);p.current.tools=[];
+  const v=projectAdvisorState(p);
+  const lion=advise(v,{actor:12,types:['reroll','end']});
+  assert.ok(lion.candidates.every(c=>c.action.type==='end'||c.action.room===12));
+  assert.ok(!lion.candidates.some(c=>c.action.type==='eat'));
+  const mammoth=advise(v,{actor:4,types:['eat','reroll','end']});
+  assert.equal(find(mammoth,'eat').reasons.find(m=>m.key==='followupLocal').args.pairs,.25);
+  assert.deepEqual(advise(v,{actor:4,types:['end']}).candidates.map(c=>c.action),[{type:'end'}]);
+});
 
 test('Day 6 regression: grow the Magic pair, then seek a Rare chain; tied replacements use cell order',()=>{
   const p=fixture([[2,'elephant',3],[4,'elephant',1],[6,'elephant',2],[10,'elephant',2],[12,'lion',1]]);
@@ -118,7 +129,27 @@ function renderBoard(doc,p){
   doc.querySelector('#action-count').textContent=`${p.current.revision} actions`;
   doc.querySelector('#day-tag').textContent=`Day ${p.current.day} / ${p.current.config.days}`;
   doc.querySelector('#board').innerHTML=p.current.rooms.map(r=>`<button data-room="${r.id}" class="room ${r.prisoner?'occupied tier-'+r.prisoner.tier:''}">${r.prisoner?`<span class="portrait ${r.prisoner.code}"></span>`:''}</button>`).join('');
+  if(!doc.querySelector('#selection-hint'))doc.body.insertAdjacentHTML('beforeend','<span id="selection-hint"></span><div id="center-actions"></div>');
+  const actor=p.current.rooms.findLast(r=>r.prisoner)?.id??0;
+  doc.querySelector('#selection-hint').textContent=`No. ${actor+1} Selected`;
+  doc.querySelector('#center-actions').innerHTML='<button data-decision="reroll">Replace</button><button data-decision="end">End</button>';
 }
+
+test('UI follows selection without save changes, ignores disabled/hidden buttons and fails closed',()=>{
+  const dom=new JSDOM('<body><span id="action-count"></span><span id="day-tag"></span><div id="board"></div></body>',{url:'https://torchlightskill.com/talos/'});
+  const w=dom.window,d=w.document,p=fixture([[1,'lion',4],[9,'elephant',1]]);renderBoard(d,p);
+  const raw=JSON.stringify(p);w.localStorage.setItem('ss14-prison-lab-v1',raw);const api=installAdvisor(w);
+  assert.match(d.querySelector('h3').textContent,/Replace Cell 10/);
+  d.querySelector('#selection-hint').textContent='2 号 至臻狂狮';api.refresh();
+  assert.match(d.querySelector('h3').textContent,/End/);assert.doesNotMatch(d.querySelector('#talos-advisor-panel').textContent,/Replace Cell 10/);
+  const button=d.querySelector('[data-decision="reroll"]');button.disabled=true;
+  assert.deepEqual(advisorControls(d,projectAdvisorState(p)).types,['end']);
+  button.disabled=false;button.style.display='none';assert.deepEqual(advisorControls(d,projectAdvisorState(p)).types,['end']);
+  button.style.display='';d.querySelector('#selection-hint').textContent='unknown';api.refresh();
+  assert.equal(d.querySelector('h3'),null);assert.match(d.querySelector('.ta-status').textContent,/action buttons/);
+  d.querySelector('#selection-hint').textContent='No. 10 Selected';d.querySelector('#center-actions').hidden=true;api.refresh();assert.equal(d.querySelector('h3'),null);
+  assert.equal(w.localStorage.getItem('ss14-prison-lab-v1'),raw);api.destroy();w.close();
+});
 test('UI follows import/undo, rejects stale saves, preserves storage, and keeps controls out of game click handlers',()=>{
   const dom=new JSDOM('<html><body><section id="startup-screen" hidden></section><div class="game-stage"></div><span id="day-tag"></span><span id="action-count"></span><div id="board"></div><dialog id="reward"></dialog></body></html>',{url:'https://torchlightskill.com/talos/'});
   const w=dom.window,d=w.document,p=fixture([[1,'lion',4],[6,'elephant',2],[9,'elephant',1]]),raw=JSON.stringify(p);

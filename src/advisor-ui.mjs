@@ -1,6 +1,27 @@
 import {projectAdvisorState,advise} from './advisor.mjs';
 import {advisorMessage,advisorActionLabel} from './advisor-text.mjs';
 
+export function advisorControls(doc,v){
+  if(v.phase!=='manage'||v.pending.length)return {actor:null,types:[]};
+  const buttons=[...doc.querySelectorAll('#center-actions button[data-decision]')].filter(b=>{
+    if(b.disabled||b.getAttribute('aria-disabled')==='true')return false;
+    for(let e=b;e;e=e.parentElement){
+      if(e.hidden)return false;
+      const css=doc.defaultView?.getComputedStyle(e);
+      if(css?.display==='none'||css?.visibility==='hidden')return false;
+    }
+    return true;
+  });
+  const types=buttons.map(b=>b.dataset.decision).filter(t=>['eat','reroll','end'].includes(t));
+  if(!types.length)return null;
+  const hint=doc.getElementById('selection-hint')?.textContent.match(/\d+/)?.[0];
+  const actor=hint===undefined?null:Number(hint)-1;
+  const selected=[...doc.querySelectorAll('#board .room.selected[data-room]')];
+  if(types.some(t=>t!=='end')&&(!Number.isInteger(actor)||actor<0||actor>15||!v.rooms[actor].prisoner||
+    selected.length>1||selected.length===1&&Number(selected[0].dataset.room)!==actor))return null;
+  return {actor,types};
+}
+
 export function advisorMatchesBoard(doc,v){
   const revision=doc.querySelector('#action-count')?.textContent.match(/\d+/)?.[0];
   const days=doc.querySelector('#day-tag')?.textContent.match(/(\d+)\s*\/\s*(\d+)/);
@@ -42,8 +63,9 @@ export function installAdvisor(win){
     if(root.hidden)status='waiting';
     else if(doc.querySelector('.game-stage[aria-busy="true"]'))status='busy';
     else if(view&&!advisorMatchesBoard(doc,view))status='stale';
-    let result=null;if(!status&&view){result=advise(view);if(result.status!=='ready')status=result.status;}
-    const key=JSON.stringify([language,status,view,result]);
+    let result=null,controls=null;
+    if(!status&&view){controls=advisorControls(doc,view);if(!controls)status='controlsMissing';else{result=advise(view,controls);if(result.status!=='ready')status=result.status;}}
+    const key=JSON.stringify([language,status,view,controls,result]);
     if(key===lastKey)return;lastKey=key;
     toggle.textContent=t('open');toggle.setAttribute('aria-label',t('title'));
     close.textContent='×';close.setAttribute('aria-label',t('close'));languageButton.textContent=language==='en'?'Русский':'English';
@@ -53,6 +75,7 @@ export function installAdvisor(win){
     if(status)content.append(node('p',t(status),'ta-status'));
     else if(result){
       content.append(node('p',t('context',{day:view.day,days:view.days,count:view.rooms.filter(r=>r.prisoner).length,rainbow:view.rainbowCount}),'ta-muted'));
+      if(view.phase==='manage'&&!view.pending.length)content.append(node('p',t('controlScope',{room:controls.actor===null?'—':controls.actor+1}),'ta-muted'));
       content.append(renderCandidate(result.candidates[0],t('best')));
       if(result.candidates.length>1){const more=node('details');more.append(node('summary',t('alternatives')));for(const rec of result.candidates.slice(1,4))more.append(renderCandidate(rec,''));content.append(more);}
       if(result.warnings.length){const more=node('details');more.append(node('summary',t('warnings')));for(const warning of result.warnings)more.append(node('p',t(warning.key,warning.args)));content.append(more);}

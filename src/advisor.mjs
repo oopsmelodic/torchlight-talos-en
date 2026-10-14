@@ -100,12 +100,12 @@ function eatCandidate(v,a,b){
       if(!codes[i])continue;
       const grown={...a,prisoner:{code:advisorSpecies[i],tier}};
       const targets=v.rooms.filter(r=>r.id!==a.id&&r.id!==b.id&&
-        (advisorCanEat(v,grown,r)||advisorCanEat(v,r,grown)));
+        (advisorCanEat(v,grown,r)||!v.localOnly&&advisorCanEat(v,r,grown)));
       if(targets.length){followup+=chance*codes[i];for(const r of targets)partners.add(r.id+1);}
     }
   }
   score+=followup*3;
-  reasons.push(msg('followup',{pairs:followup,rooms:[...partners].sort((a,b)=>a-b)}));
+  reasons.push(msg(v.localOnly?'followupLocal':'followup',{pairs:followup,rooms:[...partners].sort((a,b)=>a-b)}));
   if(v.rerolls<v.config.rerollsPerDay)reasons.push(msg('keepReroll'));
   risks.push(msg('randomCode'));
   return {action:{type:'eat',room:a.id,prey:b.id},score,reasons,risks};
@@ -123,7 +123,7 @@ function rerollCandidate(v,r){
       const changed={...r,prisoner:tier<5?{code:advisorSpecies[c],tier}:null};
       const rooms=v.rooms.map(other=>other.id===r.id?changed:other);
       score+=chance*(worth[tier]+progressBonus(v,p.tier,tier));if(tier<p.tier)down+=chance;
-      const pair=rooms.some(other=>advisorCanEat(v,changed,other)||advisorCanEat(v,other,changed));
+      const pair=rooms.some(other=>advisorCanEat(v,changed,other)||!v.localOnly&&advisorCanEat(v,other,changed));
       if(pair){pairs+=chance;score+=chance*3;}
       if(r.tusk){
         const pool=rooms.filter(other=>other.prisoner&&(v.config.tuskIncludeReplaced||other.id!==r.id));
@@ -135,7 +135,7 @@ function rerollCandidate(v,r){
   score+=tuskGain*.8;score-=bondCost(v,[r.id]);
   // A protective policy, not a proof that every high-tier replacement is suboptimal.
   if(p.tier>=3)score=Math.min(score,-1);
-  reasons.push(msg('replaceOdds',{...name(r),down,pairs}));
+  reasons.push(msg(v.localOnly?'replaceOddsLocal':'replaceOdds',{...name(r),down,pairs}));
   const higher=population(v).filter(other=>other.prisoner.tier>p.tier).map(other=>other.id+1);
   if(higher.length)reasons.push(msg('keepHigher',{rooms:higher}));
   if(has(v,'rope'))reasons.push(msg('rope'));
@@ -172,7 +172,10 @@ function rewardCandidate(v,id){
   }
   return {action:{type:'choose',id},score,reasons,risks};
 }
-export function advise(v){
+export function advise(v,controls=null){
+  // The browser always supplies visible controls. Null is retained only for
+  // explicit whole-board research callers; it is not a browser fallback.
+  if(controls)v={...v,localOnly:true};
   const candidates=[],warnings=[];
   if(['riot','finished'].includes(v.phase))return {status:'finished',candidates,warnings};
   if(v.pending.length)candidates.push(...v.pending[0].options.map(id=>rewardCandidate(v,id)));
@@ -206,12 +209,13 @@ export function advise(v){
       candidates.push({action:{type:'event',accept:true},score,reasons:[msg('execution',{room:main.id+1,count:victims.length,from:p.tier,to:tier,rooms:victims.map(r=>r.id+1)})],risks:[msg('executionLoss'),...(v.config.executionChangesCode?[msg('randomCode')]:[])]});
     }
   }else if(v.phase==='manage'){
-    for(const a of population(v))for(const b of v.rooms)if(advisorCanEat(v,a,b))candidates.push(eatCandidate(v,a,b));
-    if(v.rerolls<v.config.rerollsPerDay){
-      for(const r of population(v)){const rec=rerollCandidate(v,r);if(rec)candidates.push(rec);}
+    const actors=population(v).filter(r=>!controls||r.id===controls.actor);
+    if(!controls||controls.types.includes('eat'))for(const a of actors)for(const b of v.rooms)if(advisorCanEat(v,a,b))candidates.push(eatCandidate(v,a,b));
+    if(v.rerolls<v.config.rerollsPerDay&&(!controls||controls.types.includes('reroll'))){
+      for(const r of actors){const rec=rerollCandidate(v,r);if(rec)candidates.push(rec);}
     }
     const waiting=v.prey.length+v.rooms.filter(r=>r.nestDue).length;
-    candidates.push({action:{type:'end'},score:waiting?.5:0,reasons:[msg('end',{days:v.days-v.day,waiting})],risks:[]});
+    if(!controls||controls.types.includes('end'))candidates.push({action:{type:'end'},score:waiting?.5:0,reasons:[msg('end',{days:v.days-v.day,waiting})],risks:[]});
     for(const r of population(v).filter(r=>r.prisoner.tier>=3))warnings.push(msg('protectHigh',name(r)));
     if(v.prey.length)warnings.push(msg('preyWait'));
   }

@@ -32,6 +32,12 @@ Tested the actual generated userscript in an isolated loopback preview, loading 
 
 ## Evidence limits
 
+### Advisor 0.3.0 — current bottom controls
+
+- 25 tests pass. Added checks for selected-actor restrictions, 25% same-cell continuation versus the old 75% whole-board chance, selection changes without a new save, disabled/hidden controls, Chinese selection hints, and missing-control fail-closed behavior. Save contents remain unchanged.
+- `node scripts/check-advisor.mjs --current-cell`: 200 completed games across five scenes, 15,277 legal actions; every manual Consume/Replace actor matched the current position, with zero Legendary/Ultimate replacements. This exercises restricted engine legality; DOM tests separately cover selection differing from saved patrol position. It does not establish optimality or real-game rules.
+- A fresh browser preview was attempted but the in-app browser timed out connecting to loopback. No successful new browser or extension acceptance is claimed for 0.3.0; DOM integration and engine checks above passed.
+
 ### Advisor 0.2.0 — 2026-10-12
 
 - 21 self-contained tests pass (11 advisor tests plus 10 translation tests); build and whitespace checks pass.

@@ -1,6 +1,10 @@
 const advisorNames={elephant:'Mammoth',lion:'Berserk Lion',wolf:'Alpha Wolf',rat:'Colossal Rat',revenge:'Avenger’s Box',muzzle:'Gag of Agony',saw:'Rusty Saw',keys:'Lost Key Ring',rope:'Hangman’s Rope',fire:'Burning Stake',nest:'Writhing Iron Box',rathead:'Rat Head Necklace',ring:'Three-Headed Thumb Ring',horn:'Horn of Strife',wine:'Crimson Vintage',brand:'Brand of Original Sin'};
 const advisorRarities=['Normal','Magic','Rare','Legendary','Ultimate','Chromatic'];
 const advisorText={
+  controlsMissing:['Waiting for the current action buttons and selected Inmate. No whole-board advice is substituted.','Жду доступные кнопки действий и выбранного заключённого. Советы для других камер не подставляются.'],
+  controlScope:['Only enabled bottom actions for selected Cell {room} are evaluated. No free movement is assumed.','Оцениваются только доступные нижние кнопки для выбранной камеры {room}. Свободные переходы не предполагаются.'],
+  followupLocal:['Chance that the resulting Inmate can Consume again from this cell: {pairs}; possible targets: {rooms}. Excludes random item spawns and reward effects.','Шанс, что полученный заключённый сможет снова съесть из этой камеры: {pairs}; возможные жертвы: {rooms}. Случайное появление пищи от предметов и эффекты наград не включены.'],
+  replaceOddsLocal:['Cell {room}, {rarity} {species}: downgrade risk {down}; chance the replacement can Consume from this cell {pairs}, before Tusk upgrades.','Камера {room}, {rarity} {species}: риск понижения {down}; шанс, что новый заключённый сможет съесть из этой камеры, {pairs} до повышений Tusk.'],
   credits:['English translation and advisor by oOpsiq','Английский перевод и помощник — by oOpsiq'],
   title:['Talos Advisor','Помощник Talos'], open:['Advisor','Помощник'],close:['Close advisor','Закрыть помощника'],
   intro:['Visible-state heuristic · no automatic moves. Aim: more Chromatic, not currency profit.','Эвристика по открытым данным · без автоматических ходов. Цель: больше Chromatic, а не доход в валюте.'],

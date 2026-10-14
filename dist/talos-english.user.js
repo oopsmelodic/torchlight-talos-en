@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Torchlight Talos — English
 // @namespace    https://github.com/oopsmelodic/torchlight-talos-en
-// @version      0.2.2
+// @version      0.3.0
 // @description  English interface, dynamic messages and tooltips for the original Talos simulator. EN/CN toggle and independent EN/RU advisor; no translation service.
 // @author       oOpsiq (English translation and advisor); original simulator: 爱玩游戏的吉吉罗
 // @match        https://torchlightskill.com/talos/*
@@ -198,7 +198,7 @@ function installTranslation(win, translator) {
     visit(doc.documentElement);
   }
   const api={
-    version:'0.2.2',
+    version:'0.3.0',
     get language(){return language;},
     setLanguage(value){language=value==='zh-CN'?'zh-CN':'en';missing.clear();try{win.localStorage.setItem(storeKey,language);}catch{}sync();},
     translate:translator.translate,
@@ -340,12 +340,12 @@ function eatCandidate(v,a,b){
       if(!codes[i])continue;
       const grown={...a,prisoner:{code:advisorSpecies[i],tier}};
       const targets=v.rooms.filter(r=>r.id!==a.id&&r.id!==b.id&&
-        (advisorCanEat(v,grown,r)||advisorCanEat(v,r,grown)));
+        (advisorCanEat(v,grown,r)||!v.localOnly&&advisorCanEat(v,r,grown)));
       if(targets.length){followup+=chance*codes[i];for(const r of targets)partners.add(r.id+1);}
     }
   }
   score+=followup*3;
-  reasons.push(msg('followup',{pairs:followup,rooms:[...partners].sort((a,b)=>a-b)}));
+  reasons.push(msg(v.localOnly?'followupLocal':'followup',{pairs:followup,rooms:[...partners].sort((a,b)=>a-b)}));
   if(v.rerolls<v.config.rerollsPerDay)reasons.push(msg('keepReroll'));
   risks.push(msg('randomCode'));
   return {action:{type:'eat',room:a.id,prey:b.id},score,reasons,risks};
@@ -363,7 +363,7 @@ function rerollCandidate(v,r){
       const changed={...r,prisoner:tier<5?{code:advisorSpecies[c],tier}:null};
       const rooms=v.rooms.map(other=>other.id===r.id?changed:other);
       score+=chance*(worth[tier]+progressBonus(v,p.tier,tier));if(tier<p.tier)down+=chance;
-      const pair=rooms.some(other=>advisorCanEat(v,changed,other)||advisorCanEat(v,other,changed));
+      const pair=rooms.some(other=>advisorCanEat(v,changed,other)||!v.localOnly&&advisorCanEat(v,other,changed));
       if(pair){pairs+=chance;score+=chance*3;}
       if(r.tusk){
         const pool=rooms.filter(other=>other.prisoner&&(v.config.tuskIncludeReplaced||other.id!==r.id));
@@ -375,7 +375,7 @@ function rerollCandidate(v,r){
   score+=tuskGain*.8;score-=bondCost(v,[r.id]);
   // A protective policy, not a proof that every high-tier replacement is suboptimal.
   if(p.tier>=3)score=Math.min(score,-1);
-  reasons.push(msg('replaceOdds',{...name(r),down,pairs}));
+  reasons.push(msg(v.localOnly?'replaceOddsLocal':'replaceOdds',{...name(r),down,pairs}));
   const higher=population(v).filter(other=>other.prisoner.tier>p.tier).map(other=>other.id+1);
   if(higher.length)reasons.push(msg('keepHigher',{rooms:higher}));
   if(has(v,'rope'))reasons.push(msg('rope'));
@@ -412,7 +412,10 @@ function rewardCandidate(v,id){
   }
   return {action:{type:'choose',id},score,reasons,risks};
 }
-function advise(v){
+function advise(v,controls=null){
+  // The browser always supplies visible controls. Null is retained only for
+  // explicit whole-board research callers; it is not a browser fallback.
+  if(controls)v={...v,localOnly:true};
   const candidates=[],warnings=[];
   if(['riot','finished'].includes(v.phase))return {status:'finished',candidates,warnings};
   if(v.pending.length)candidates.push(...v.pending[0].options.map(id=>rewardCandidate(v,id)));
@@ -446,12 +449,13 @@ function advise(v){
       candidates.push({action:{type:'event',accept:true},score,reasons:[msg('execution',{room:main.id+1,count:victims.length,from:p.tier,to:tier,rooms:victims.map(r=>r.id+1)})],risks:[msg('executionLoss'),...(v.config.executionChangesCode?[msg('randomCode')]:[])]});
     }
   }else if(v.phase==='manage'){
-    for(const a of population(v))for(const b of v.rooms)if(advisorCanEat(v,a,b))candidates.push(eatCandidate(v,a,b));
-    if(v.rerolls<v.config.rerollsPerDay){
-      for(const r of population(v)){const rec=rerollCandidate(v,r);if(rec)candidates.push(rec);}
+    const actors=population(v).filter(r=>!controls||r.id===controls.actor);
+    if(!controls||controls.types.includes('eat'))for(const a of actors)for(const b of v.rooms)if(advisorCanEat(v,a,b))candidates.push(eatCandidate(v,a,b));
+    if(v.rerolls<v.config.rerollsPerDay&&(!controls||controls.types.includes('reroll'))){
+      for(const r of actors){const rec=rerollCandidate(v,r);if(rec)candidates.push(rec);}
     }
     const waiting=v.prey.length+v.rooms.filter(r=>r.nestDue).length;
-    candidates.push({action:{type:'end'},score:waiting?.5:0,reasons:[msg('end',{days:v.days-v.day,waiting})],risks:[]});
+    if(!controls||controls.types.includes('end'))candidates.push({action:{type:'end'},score:waiting?.5:0,reasons:[msg('end',{days:v.days-v.day,waiting})],risks:[]});
     for(const r of population(v).filter(r=>r.prisoner.tier>=3))warnings.push(msg('protectHigh',name(r)));
     if(v.prey.length)warnings.push(msg('preyWait'));
   }
@@ -464,6 +468,10 @@ function advise(v){
 const advisorNames={elephant:'Mammoth',lion:'Berserk Lion',wolf:'Alpha Wolf',rat:'Colossal Rat',revenge:'Avenger’s Box',muzzle:'Gag of Agony',saw:'Rusty Saw',keys:'Lost Key Ring',rope:'Hangman’s Rope',fire:'Burning Stake',nest:'Writhing Iron Box',rathead:'Rat Head Necklace',ring:'Three-Headed Thumb Ring',horn:'Horn of Strife',wine:'Crimson Vintage',brand:'Brand of Original Sin'};
 const advisorRarities=['Normal','Magic','Rare','Legendary','Ultimate','Chromatic'];
 const advisorText={
+  controlsMissing:['Waiting for the current action buttons and selected Inmate. No whole-board advice is substituted.','Жду доступные кнопки действий и выбранного заключённого. Советы для других камер не подставляются.'],
+  controlScope:['Only enabled bottom actions for selected Cell {room} are evaluated. No free movement is assumed.','Оцениваются только доступные нижние кнопки для выбранной камеры {room}. Свободные переходы не предполагаются.'],
+  followupLocal:['Chance that the resulting Inmate can Consume again from this cell: {pairs}; possible targets: {rooms}. Excludes random item spawns and reward effects.','Шанс, что полученный заключённый сможет снова съесть из этой камеры: {pairs}; возможные жертвы: {rooms}. Случайное появление пищи от предметов и эффекты наград не включены.'],
+  replaceOddsLocal:['Cell {room}, {rarity} {species}: downgrade risk {down}; chance the replacement can Consume from this cell {pairs}, before Tusk upgrades.','Камера {room}, {rarity} {species}: риск понижения {down}; шанс, что новый заключённый сможет съесть из этой камеры, {pairs} до повышений Tusk.'],
   credits:['English translation and advisor by oOpsiq','Английский перевод и помощник — by oOpsiq'],
   title:['Talos Advisor','Помощник Talos'], open:['Advisor','Помощник'],close:['Close advisor','Закрыть помощника'],
   intro:['Visible-state heuristic · no automatic moves. Aim: more Chromatic, not currency profit.','Эвристика по открытым данным · без автоматических ходов. Цель: больше Chromatic, а не доход в валюте.'],
@@ -547,6 +555,27 @@ function advisorActionLabel(action,language='en'){
 }
 
 
+function advisorControls(doc,v){
+  if(v.phase!=='manage'||v.pending.length)return {actor:null,types:[]};
+  const buttons=[...doc.querySelectorAll('#center-actions button[data-decision]')].filter(b=>{
+    if(b.disabled||b.getAttribute('aria-disabled')==='true')return false;
+    for(let e=b;e;e=e.parentElement){
+      if(e.hidden)return false;
+      const css=doc.defaultView?.getComputedStyle(e);
+      if(css?.display==='none'||css?.visibility==='hidden')return false;
+    }
+    return true;
+  });
+  const types=buttons.map(b=>b.dataset.decision).filter(t=>['eat','reroll','end'].includes(t));
+  if(!types.length)return null;
+  const hint=doc.getElementById('selection-hint')?.textContent.match(/\d+/)?.[0];
+  const actor=hint===undefined?null:Number(hint)-1;
+  const selected=[...doc.querySelectorAll('#board .room.selected[data-room]')];
+  if(types.some(t=>t!=='end')&&(!Number.isInteger(actor)||actor<0||actor>15||!v.rooms[actor].prisoner||
+    selected.length>1||selected.length===1&&Number(selected[0].dataset.room)!==actor))return null;
+  return {actor,types};
+}
+
 function advisorMatchesBoard(doc,v){
   const revision=doc.querySelector('#action-count')?.textContent.match(/\d+/)?.[0];
   const days=doc.querySelector('#day-tag')?.textContent.match(/(\d+)\s*\/\s*(\d+)/);
@@ -588,8 +617,9 @@ function installAdvisor(win){
     if(root.hidden)status='waiting';
     else if(doc.querySelector('.game-stage[aria-busy="true"]'))status='busy';
     else if(view&&!advisorMatchesBoard(doc,view))status='stale';
-    let result=null;if(!status&&view){result=advise(view);if(result.status!=='ready')status=result.status;}
-    const key=JSON.stringify([language,status,view,result]);
+    let result=null,controls=null;
+    if(!status&&view){controls=advisorControls(doc,view);if(!controls)status='controlsMissing';else{result=advise(view,controls);if(result.status!=='ready')status=result.status;}}
+    const key=JSON.stringify([language,status,view,controls,result]);
     if(key===lastKey)return;lastKey=key;
     toggle.textContent=t('open');toggle.setAttribute('aria-label',t('title'));
     close.textContent='×';close.setAttribute('aria-label',t('close'));languageButton.textContent=language==='en'?'Русский':'English';
@@ -599,6 +629,7 @@ function installAdvisor(win){
     if(status)content.append(node('p',t(status),'ta-status'));
     else if(result){
       content.append(node('p',t('context',{day:view.day,days:view.days,count:view.rooms.filter(r=>r.prisoner).length,rainbow:view.rainbowCount}),'ta-muted'));
+      if(view.phase==='manage'&&!view.pending.length)content.append(node('p',t('controlScope',{room:controls.actor===null?'—':controls.actor+1}),'ta-muted'));
       content.append(renderCandidate(result.candidates[0],t('best')));
       if(result.candidates.length>1){const more=node('details');more.append(node('summary',t('alternatives')));for(const rec of result.candidates.slice(1,4))more.append(renderCandidate(rec,''));content.append(more);}
       if(result.warnings.length){const more=node('details');more.append(node('summary',t('warnings')));for(const warning of result.warnings)more.append(node('p',t(warning.key,warning.args)));content.append(more);}

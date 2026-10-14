@@ -2,6 +2,8 @@
 
 English translation and advisor **by oOpsiq**.
 
+**Current version: 0.3.0.** Management advice now follows the enabled bottom action buttons for the currently selected cell. It does not suggest switching to another Inmate. Follow-up probabilities count only Consumes performed by the resulting Inmate in that same cell. If the selection or controls cannot be read reliably, advice waits instead of falling back to the whole board. Patrol choices, events, and rewards retain their existing handling. The simulator's own controls and rules are unchanged.
+
 English localization for the **original** [Tartarus simulator](https://torchlightskill.com/talos/). This repository ships a browser userscript and dictionaries, not a copy of the simulator. GitHub Pages is not used.
 
 [Russian strategy guide and advisor analysis](docs/strategy-guide.ru.md): why the original advisor can recommend rerolling an Ultimate Inmate, practical decisions, and a reproducible comparison of five policies. The userscript translates the advisor; it does not replace its decision logic.
